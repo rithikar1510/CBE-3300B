@@ -13,3 +13,19 @@ Use: plant growth and also preserving sensitive materials (humidor and growth ch
 # Premise: aa
 
 # Components: 
+
+_Mechanical_
+- Chamber: a tupperware container
+- 2 flasks - one for humid air with aquarium beads, one for the dissecator.
+- Aquarium beads
+- Dessicant beads
+- Tubing - bendable silicone tubes
+- Silicone caulk/sealant
+- Air pump
+
+_Electrical_
+- Adafruit heating coil
+- Controller
+- Adafruit control unit 
+- Humidity sensor
+
