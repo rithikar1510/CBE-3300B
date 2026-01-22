@@ -9,6 +9,9 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 # Premise: 
 
 ### Physical/Chemical Principles:
+
+In this device, a controller is used to change the flow rates of two air streams to manage the relative humidity (RH) of a chamber. Two air streams are mixed: a dry air stream with negligible water vapor content and a humidified air stream formed by bubbling air through water kept at a specific temperature. By adjusting the relative flow rates of these streams, the ratio of humid air to dry air increases or decreases to increase or decrease the RH of the chamber. 
+
 ### Calculations
 ### Prototyping Approach
 The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
@@ -29,7 +32,3 @@ _Electrical_
 - Controller
 - Adafruit control unit 
 - Humidity sensor
-
-# Physical principles:
-
-The humidity-controlled chamber operates by mixing two air streams: a dry air stream with negligible water vapor content and a humidified air stream in equilibrium with liquid water. By adjusting the relative flow rates of these streams, the pressure of water vapor entering the chamber is controlled, thereby setting the relative humidity at constant temperature. This approach relies on gas–liquid equilibrium, ideal gas behavior, and mass conservation of water vapor.
