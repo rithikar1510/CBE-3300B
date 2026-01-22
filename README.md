@@ -10,7 +10,7 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 
 ### Physical/Chemical Principles:
 
-In this device, a controller is used to change the flow rates of two air streams to manage the relative humidity (RH) of a chamber. Two air streams are mixed: a dry air stream with negligible water vapor content and a humidified air stream formed by bubbling air through water kept at a specific temperature. By adjusting the relative flow rates of these streams, the ratio of humid air to dry air increases or decreases to increase or decrease the RH of the chamber. 
+In this device, a controller is used to change the flow rates of two air streams to manage the relative humidity (RH) of a chamber. Two air streams are mixed: a dry air stream with negligible water vapor content and a humidified air stream formed by bubbling air through water kept at a specific temperature. By adjusting the relative flow rates of these streams, the ratio of humid air to dry air increases or decreases to increase or decrease the RH of the chamber. The water is being kept at a constant temperature to ensure that the RH of the humid air input stream remains constant; in this way, only adjustment of the flow rate changes the RH of the chamber. Another level of RH control can come from changing the temperature of the water. If the water's temperature increases, the humidity of the input humid stream also increases, making drastic increases to the RH of the chamber possible.
 
 ### Calculations
 ### Prototyping Approach
