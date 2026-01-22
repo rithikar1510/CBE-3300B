@@ -11,12 +11,12 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 # Components: 
 
 _Mechanical_
-- Chamber: a tupperware container
+- Chamber (32oz: https://tinyurl.com/cbe3300container32oz, square container: )
 - 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air.
-- Dessicator beads
-- Tubing - bendable silicone tubes
-- Silicone caulk/sealant
-- Air pump (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699) 
+- Dessicator beads (https://www.amazon.com/Premium-Indicating-Silica-Industry-Standard/dp/B013L31PQ0/ref=sr_1_3?crid=RVISUUHO3UJ0&dib=eyJ2IjoiMSJ9._DjEw0TeT2_ClWLr2xpFAjEGwNT1-fvj-2YUOqST7cjMp37gEEVuNHrUyKnISaTJPYOsKh0TMvPe1j9IU56vr4ZTScbDSH2OF1NX4Zrh6qUGD67Qd0-QHvYV8Dgyg-BuFSenUgXwsNF1I4W15Sc_dteR4Um2enCj8SEGEpOm7vtnrCq2MGKcOETgFOxUQpYb7co0gubVIH9oByjkCuNyNLAUp0GO-3MP-Ev4BiqTqWY.SIfMYBUStapbl_nM2Ba1OTG9fvmyZzmUVabAzWcHSmA&dib_tag=se&keywords=dessicator%2Bbeads&qid=1769119978&sprefix=dessicator%2Bbeads%2Caps%2C105&sr=8-3&th=1) 
+- Tubing - bendable silicone tubes (2 rolls of 3mm ID: https://www.adafruit.com/product/4661, 2 rolls of ~3.175mm ID: https://tinyurl.com/tubingforcbe3300b)
+- Gas push tube sealing (https://www.sp-spareparts.com/en/p/qsq-6-4-festo) 
+- 2 Air pumps (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699) 
 
 _Electrical_
 - Hotplate
