@@ -13,7 +13,6 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 _Mechanical_
 - Chamber: a tupperware container
 - 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air.
-- Aquarium beads
 - Dessicator beads
 - Tubing - bendable silicone tubes
 - Silicone caulk/sealant
