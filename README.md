@@ -8,6 +8,11 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 
 # Premise: 
 
+### Physical/Chemical Principles:
+### Calculations
+### Prototyping Approach
+
+
 # Components: 
 
 _Mechanical_
