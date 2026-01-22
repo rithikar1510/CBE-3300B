@@ -24,5 +24,6 @@ _Electrical_
 - Adafruit control unit 
 - Humidity sensor
 
-Physical principles
+# Physical principles:
+
 The humidity-controlled chamber operates by mixing two air streams: a dry air stream with negligible water vapor content and a humidified air stream in equilibrium with liquid water. By adjusting the relative flow rates of these streams, the pressure of water vapor entering the chamber is controlled, thereby setting the relative humidity at constant temperature. This approach relies on gas–liquid equilibrium, ideal gas behavior, and mass conservation of water vapor.
