@@ -11,6 +11,7 @@ In this project, using an air pump and a controller, the humidity of a chamber i
 ### Physical/Chemical Principles:
 ### Calculations
 ### Prototyping Approach
+The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
 
 
 # Components: 
