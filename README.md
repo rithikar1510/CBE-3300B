@@ -16,7 +16,7 @@ Use: plant growth and also preserving sensitive materials (humidor and growth ch
 
 _Mechanical_
 - Chamber: a tupperware container
-- 2 flasks - one for humid air with aquarium beads, one for the dissecator.
+- 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air.
 - Aquarium beads
 - Dessicant beads
 - Tubing - bendable silicone tubes
