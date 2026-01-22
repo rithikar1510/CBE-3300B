@@ -1,16 +1,12 @@
 # CBE-3300B
 
 # Project: 
-https://www.youtube.com/watch?v=4ftJgv-pvd4 
 
-https://forum.arduino.cc/t/diy-humidity-and-temperature-chamber/482329 
+In this project, using an air pump and a controller, the humidity of a chamber is controller to various set points. Using an air pump, air is run through a flask of water and a flask with dessicator beads. As air is bubbled through the water, the outlet stream of the flask delivers humid air to the chamber. As needed, air is run through the flask with dessicator beads to deliver dry air. Based on a set point, a sensor reads the humidity within the chamber, with the signal sent to a controller that adjusts the flow of humid air and dry air coming from the air pump to reach a desired set point. The PFD of the design is shown below. 
 
-Use: plant growth and also preserving sensitive materials (humidor and growth chamber) 
+<img width="802" height="576" alt="image" src="https://github.com/user-attachments/assets/bc75f81a-391e-46e6-b414-4864870c4b7d" />
 
-<img width="1517" height="716" alt="image" src="https://github.com/user-attachments/assets/da09a5f3-2bcd-499d-8c28-0a15ed8aeedf" />
-
-
-# Premise: aa
+# Premise: 
 
 # Components: 
 
