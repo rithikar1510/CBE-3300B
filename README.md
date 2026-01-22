@@ -10,6 +10,6 @@ Use: plant growth and also preserving sensitive materials (humidor and growth ch
 <img width="1517" height="716" alt="image" src="https://github.com/user-attachments/assets/da09a5f3-2bcd-499d-8c28-0a15ed8aeedf" />
 
 
-# Premise: 
+# Premise: aa
 
 # Components: 
