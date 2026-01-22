@@ -14,7 +14,7 @@ _Mechanical_
 - Chamber: a tupperware container
 - 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air.
 - Aquarium beads
-- Dessicant beads
+- Dessicator beads
 - Tubing - bendable silicone tubes
 - Silicone caulk/sealant
 - Air pump
