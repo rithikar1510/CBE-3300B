@@ -16,7 +16,7 @@ _Mechanical_
 - Dessicator beads
 - Tubing - bendable silicone tubes
 - Silicone caulk/sealant
-- Air pump
+- Air pump (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699) 
 
 _Electrical_
 - Adafruit heating coil
