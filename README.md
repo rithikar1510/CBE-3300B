@@ -20,8 +20,17 @@ There are no reactions in this device. There are no corrosive materials either.
 
 There are no calculations necessary. We will be using a PID algorithm and the humidity sensor automatically calculates the RH. 
 
+#### Summary:
+The Arduino acts as the central controller for the system and provides power and control signals to the circuit. All components share a common ground so they can communicate properly. A humidity sensor inside the chamber continuously measures the relative humidity and sends this information to the Arduino. The desired humidity level is set using a potentiometer, which the Arduino reads as an input. Since the air pumps require more power than the Arduino can supply directly, they are controlled using transistor switch circuits that allow the Arduino to safely turn the pumps on and off. Diodes are included across the pumps to protect the circuit when the pumps are switched off. An LED is used as a simple visual indicator to show when the system is operating. Together, these components allow the system to monitor and adjust humidity in the chamber in a controlled and reliable way.
 
-### Circuit Description
+### Prototyping Approach
+The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
+
+The control error is defined as the difference between the desired humidity setpoint and the measured chamber humidity. The PID controller computes a control signal based on the instantaneous error, the accumulated error over time, and the rate of change of the error. This combined response enables fast correction of deviations while minimizing steady-state offset and oscillations. The control unit we will be using is the Adafruit control unit (Adafruit Trinket M0) which can be controlled using Python. The microcontroller here will be using pulse width modulation, or PWM, to control the air pumps. PWM allows for the air pumps to be rapidly turned on and off, which allows for close control of the humid and dry air streams, preventing large overshoot. Using a PID algorithm also helps prevent over/undershoot. 
+
+The input to the controller is the reading from the humidity sensor (Adafruit Sensirion SHT31-D). This humidity controller directly measures the RH of the chamber and can be connected to the Trinket M0 using the pin-out from the manual. Thus the flow of the electrical signal goes from humidity controller to Adafruit microcontroller to air pump(s). A nondigital, manual input can also be added using a potentiometer, where the voltage can be varied to vary the desired set point of the microcontroller. The potentiometer can be connected to an analog input on the Trinket M0, which can then be read in the code to vary the set point. 
+
+#### Circuit Description
 The Arduino 5 V pin is connected to the power rail of the breadboard, and the Arduino GND pin is connected to the ground rail. The ground of the external pump power supply is also connected to the same ground rail to ensure a common electrical reference.
 
 The humidity sensor is placed inside the chamber and connected as follows to the breadboard:
@@ -50,17 +59,6 @@ An LED is placed on the breadboard:
 - Arduino digital pin (e.g., D7) → 220 Ω resistor
 - Resistor → LED long leg (anode)
 - LED short leg (cathode) → ground rail
-
-#### Summary:
-The Arduino acts as the central controller for the system and provides power and control signals to the circuit. All components share a common ground so they can communicate properly. A humidity sensor inside the chamber continuously measures the relative humidity and sends this information to the Arduino. The desired humidity level is set using a potentiometer, which the Arduino reads as an input. Since the air pumps require more power than the Arduino can supply directly, they are controlled using transistor switch circuits that allow the Arduino to safely turn the pumps on and off. Diodes are included across the pumps to protect the circuit when the pumps are switched off. An LED is used as a simple visual indicator to show when the system is operating. Together, these components allow the system to monitor and adjust humidity in the chamber in a controlled and reliable way.
-
-### Prototyping Approach
-The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
-
-The control error is defined as the difference between the desired humidity setpoint and the measured chamber humidity. The PID controller computes a control signal based on the instantaneous error, the accumulated error over time, and the rate of change of the error. This combined response enables fast correction of deviations while minimizing steady-state offset and oscillations. The control unit we will be using is the Adafruit control unit (Adafruit Trinket M0) which can be controlled using Python. The microcontroller here will be using pulse width modulation, or PWM, to control the air pumps. PWM allows for the air pumps to be rapidly turned on and off, which allows for close control of the humid and dry air streams, preventing large overshoot. Using a PID algorithm also helps prevent over/undershoot. 
-
-The input to the controller is the reading from the humidity sensor (Adafruit Sensirion SHT31-D). This humidity controller directly measures the RH of the chamber and can be connected to the Trinket M0 using the pin-out from the manual. Thus the flow of the electrical signal goes from humidity controller to Adafruit microcontroller to air pump(s). A nondigital, manual input can also be added using a potentiometer, where the voltage can be varied to vary the desired set point of the microcontroller. The potentiometer can be connected to an analog input on the Trinket M0, which can then be read in the code to vary the set point. 
-
 
 # Components: 
 
