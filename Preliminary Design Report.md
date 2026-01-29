@@ -73,7 +73,6 @@ _Mechanical_
 - Tubing - bendable silicone tubes (2 rolls of 3mm ID: https://www.adafruit.com/product/4661, 2 rolls of ~3.175mm ID: https://tinyurl.com/tubingforcbe3300b)
 - Gas push tube sealing (https://www.sp-spareparts.com/en/p/qsq-6-4-festo) 
 - 2 Air pumps (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699)
-- Luer locks https://www.amazon.com/MEETOOT-Polycarbonate-Laboratory-Biochemical-Instruments/dp/B0BXX2W258/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.thOCirzQdsdKBCpgyPgfNUR5KrXHOe1U2w4Uz_d9nTr-kLnDQCewst9LoBYBJPPqMKXNJBizwereqxX0Wddp3hSez1uU6to4YHn_ku7r060sJKJbpQfk29UjKDI-gdEKPUBR9dZgva2UHWXD3oCciBfMBv9U6Zg0Va9MJS_z6TpzP0-fo44Gl1MOAlN5x_EcoAkcxjsHJPgZVgat9ie_ph4yRdkzGX-AXF2Sj62INqk.6737MCFrSSuVfHhQntPLG5u3JwREZYepMsfVC70l4qQ&dib_tag=se&keywords=luer%2Block%2Blarge&qid=1769724213&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
 
 _Electrical_
 - Hotplate
