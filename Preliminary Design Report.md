@@ -66,11 +66,13 @@ An LED is placed on the breadboard:
 
 _Mechanical_
 - Chamber (32oz: https://tinyurl.com/cbe3300container32oz, square container: https://tinyurl.com/othercontainer)
-- 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air. (https://www.indigoinstruments.com/glassware/erlenmeyer_flasks/500ml-erlenmeyer-flask-55207.html?srsltid=AfmBOopTUBJz1xRSZRwkczvqmDJVzZRJL-TcLrCXVP2Cq8P8r6OROCOW) 
+- 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air. (https://www.indigoinstruments.com/glassware/erlenmeyer_flasks/500ml-erlenmeyer-flask-55207.html?srsltid=AfmBOopTUBJz1xRSZRwkczvqmDJVzZRJL-TcLrCXVP2Cq8P8r6OROCOW)
+- Plastic vials https://www.amazon.com/Plastic-Containers-Tubes-Sample-Container/dp/B01N9U2DS1/ref=sr_1_6?crid=3GUXLGM9JGLI9&dib=eyJ2IjoiMSJ9.a5FOY3fwxTpOPNHUqYt9sEkz7lpp3faPnjcQrS_nAqdcq5FJHd1bI8hD21D7T--_BCkX8AU54NjSZq553PBbF5Dyd0IRmsv_2Y1jIVA5cs_K9BimaUjY15HiYJWaUfMdnWJzlxDRFr0nx7UIG7sKC35Iuey89kE1csafQJk_FalLBle1xPvsgAz8crYNbbz4gSTJfm14MmYUn0nK5ZOZemhrzETkUN1yd--8cjm_xDVNVasmGOb1lvzXqAuwnVWEjFUwUX4yGO2hfkWF2AnxYYdPPBWFRf3hlViYJX_Ylnk.JhqsE9nffH_L9MkHEhtS3HWSHV_5lZNoTfL3PWa0L-Q&dib_tag=se&keywords=plastic+vials&qid=1769724743&s=industrial&sprefix=plastic+vials+%2Cindustrial%2C105&sr=1-6
 - Dessicator beads (https://www.amazon.com/Premium-Indicating-Silica-Industry-Standard/dp/B013L31PQ0/ref=sr_1_3?crid=RVISUUHO3UJ0&dib=eyJ2IjoiMSJ9._DjEw0TeT2_ClWLr2xpFAjEGwNT1-fvj-2YUOqST7cjMp37gEEVuNHrUyKnISaTJPYOsKh0TMvPe1j9IU56vr4ZTScbDSH2OF1NX4Zrh6qUGD67Qd0-QHvYV8Dgyg-BuFSenUgXwsNF1I4W15Sc_dteR4Um2enCj8SEGEpOm7vtnrCq2MGKcOETgFOxUQpYb7co0gubVIH9oByjkCuNyNLAUp0GO-3MP-Ev4BiqTqWY.SIfMYBUStapbl_nM2Ba1OTG9fvmyZzmUVabAzWcHSmA&dib_tag=se&keywords=dessicator%2Bbeads&qid=1769119978&sprefix=dessicator%2Bbeads%2Caps%2C105&sr=8-3&th=1) 
 - Tubing - bendable silicone tubes (2 rolls of 3mm ID: https://www.adafruit.com/product/4661, 2 rolls of ~3.175mm ID: https://tinyurl.com/tubingforcbe3300b)
 - Gas push tube sealing (https://www.sp-spareparts.com/en/p/qsq-6-4-festo) 
-- 2 Air pumps (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699) 
+- 2 Air pumps (Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM - ZR370-02PM: https://www.adafruit.com/product/4699)
+- Luer locks https://www.amazon.com/MEETOOT-Polycarbonate-Laboratory-Biochemical-Instruments/dp/B0BXX2W258/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.thOCirzQdsdKBCpgyPgfNUR5KrXHOe1U2w4Uz_d9nTr-kLnDQCewst9LoBYBJPPqMKXNJBizwereqxX0Wddp3hSez1uU6to4YHn_ku7r060sJKJbpQfk29UjKDI-gdEKPUBR9dZgva2UHWXD3oCciBfMBv9U6Zg0Va9MJS_z6TpzP0-fo44Gl1MOAlN5x_EcoAkcxjsHJPgZVgat9ie_ph4yRdkzGX-AXF2Sj62INqk.6737MCFrSSuVfHhQntPLG5u3JwREZYepMsfVC70l4qQ&dib_tag=se&keywords=luer%2Block%2Blarge&qid=1769724213&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
 
 _Electrical_
 - Hotplate
