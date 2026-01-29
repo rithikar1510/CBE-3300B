@@ -45,3 +45,4 @@ _Electrical_
 - PN2222 transistor x2
 - 220 Ω resistor x2
 - 1N4001 diode x2
+- 10 kΩ potentiometer
