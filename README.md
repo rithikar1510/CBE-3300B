@@ -74,6 +74,7 @@ _Mechanical_
 
 _Electrical_
 - Hotplate
+- Heating tape (to replace the hotplate)
 - Adafruit control unit (adafruit.com/product/3500?srsltid=AfmBOopctgbF7qVH7y2xIG2ivOXZ61lkIyijYA6622Jabe7w3e4Oubws) 
 - Humidity sensor (https://www.adafruit.com/product/2857?srsltid=AfmBOoqs4Np-P6ohPI5jEt_gJOYip02rR1GwN0GPTHiV_GRCL9Y_RTrb)
 - PN2222 transistor x2 (https://www.adafruit.com/product/756?srsltid=AfmBOoo7C42COf9H8JbmK_CzWmIN2YvXj0G7fIRqkkr9lZ8j5g4WMziS) 
