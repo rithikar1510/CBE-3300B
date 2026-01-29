@@ -20,6 +20,40 @@ There are no reactions in this device. There are no corrosive materials either.
 
 There are no calculations necessary. We will be using a PID algorithm and the humidity sensor automatically calculates the RH. 
 
+
+### Circuit Description
+The Arduino 5 V pin is connected to the power rail of the breadboard, and the Arduino GND pin is connected to the ground rail. The ground of the external pump power supply is also connected to the same ground rail to ensure a common electrical reference.
+
+The humidity sensor is placed on the breadboard and connected as follows:
+Sensor VIN → breadboard 5 V rail
+Sensor GND → breadboard ground rail
+Sensor SDA → Arduino SDA pin
+Sensor SCL → Arduino SCL pin
+
+A 10 kΩ potentiometer is placed across the breadboard gap:
+- One outer leg → 5 V rail
+- Other outer leg → ground rail
+- Middle leg → Arduino analog input A0
+
+Each air pump is controlled using a transistor switch circuit assembled on the breadboard.
+- Arduino digital pin (e.g., D8 or D9) → 220 Ω resistor
+- Other side of resistor → base of PN2222 transistor
+- Emitter of transistor → ground rail
+- Collector of transistor → negative terminal of pump
+- Positive terminal of pump → external power supply positive
+
+A diode is connected across the pump:
+- Diode cathode (striped end) → pump positive terminal
+- Diode anode → transistor collector
+
+An LED is placed on the breadboard:
+- Arduino digital pin (e.g., D7) → 220 Ω resistor
+- Resistor → LED long leg (anode)
+- LED short leg (cathode) → ground rail
+
+#### Summary:
+The Arduino acts as the central controller for the system and provides power and control signals to the circuit. All components share a common ground so they can communicate properly. A humidity sensor inside the chamber continuously measures the relative humidity and sends this information to the Arduino. The desired humidity level is set using a potentiometer, which the Arduino reads as an input. Since the air pumps require more power than the Arduino can supply directly, they are controlled using transistor switch circuits that allow the Arduino to safely turn the pumps on and off. Diodes are included across the pumps to protect the circuit when the pumps are switched off. An LED is used as a simple visual indicator to show when the system is operating. Together, these components allow the system to monitor and adjust humidity in the chamber in a controlled and reliable way.
+
 ### Prototyping Approach
 The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
 
