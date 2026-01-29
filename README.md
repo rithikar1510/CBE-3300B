@@ -22,7 +22,7 @@ The proposed prototype is a benchtop humidity-controlled chamber that regulates 
 
 The control error is defined as the difference between the desired humidity setpoint and the measured chamber humidity. The PID controller computes a control signal based on the instantaneous error, the accumulated error over time, and the rate of change of the error. This combined response enables fast correction of deviations while minimizing steady-state offset and oscillations. The control unit we will be using is the Adafruit control unit (Adafruit Trinket M0) which can be controlled using Python. The microcontroller here will be using pulse width modulation, or PWM, to control the air pumps. PWM allows for the air pumps to be rapidly turned on and off, which allows for close control of the humid and dry air streams, preventing large overshoot. Using a PID algorithm also helps prevent over/undershoot. 
 
-The input to the controller is the reading from the humidity sensor (
+The input to the controller is the reading from the humidity sensor (Adafruit Sensirion SHT31-D). This humidity controller directly measures the RH of the chamber and can be connected to the Trinket M0 using the pin-out from the manual. Thus the flow of the electrical signal goes from humidity controller to Adafruit microcontroller to air pump(s). 
 
 
 # Components: 
@@ -37,6 +37,5 @@ _Mechanical_
 
 _Electrical_
 - Hotplate
-- Controller
-- Adafruit control unit 
-- Humidity sensor
+- Adafruit control unit (adafruit.com/product/3500?srsltid=AfmBOopctgbF7qVH7y2xIG2ivOXZ61lkIyijYA6622Jabe7w3e4Oubws) 
+- Humidity sensor (https://www.adafruit.com/product/2857?srsltid=AfmBOoqs4Np-P6ohPI5jEt_gJOYip02rR1GwN0GPTHiV_GRCL9Y_RTrb) 
