@@ -24,7 +24,7 @@ There are no calculations necessary. We will be using a PID algorithm and the hu
 ### Circuit Description
 The Arduino 5 V pin is connected to the power rail of the breadboard, and the Arduino GND pin is connected to the ground rail. The ground of the external pump power supply is also connected to the same ground rail to ensure a common electrical reference.
 
-The humidity sensor is placed on the breadboard and connected as follows:
+The humidity sensor is placed inside the chamber and connected as follows to the breadboard:
 Sensor VIN → breadboard 5 V rail
 Sensor GND → breadboard ground rail
 Sensor SDA → Arduino SDA pin
