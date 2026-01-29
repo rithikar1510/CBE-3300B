@@ -43,6 +43,7 @@ _Electrical_
 - Adafruit control unit (adafruit.com/product/3500?srsltid=AfmBOopctgbF7qVH7y2xIG2ivOXZ61lkIyijYA6622Jabe7w3e4Oubws) 
 - Humidity sensor (https://www.adafruit.com/product/2857?srsltid=AfmBOoqs4Np-P6ohPI5jEt_gJOYip02rR1GwN0GPTHiV_GRCL9Y_RTrb)
 - PN2222 transistor x2
-- 220 Ω resistor x2
+- 220 Ω resistor x3
 - 1N4001 diode x2
 - 10 kΩ potentiometer
+- LED
