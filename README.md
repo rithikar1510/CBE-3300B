@@ -17,6 +17,9 @@ The RH of the chamber is controlled by air streams from two air pumps. Two strea
 There are no reactions in this device. There are no corrosive materials either. 
 
 ### Calculations
+
+There are no calculations necessary. We will be using a PID algorithm and the humidity sensor automatically calculates the RH. 
+
 ### Prototyping Approach
 The proposed prototype is a benchtop humidity-controlled chamber that regulates relative humidity by mixing two independently generated air streams: a dry air stream and a humidified air stream. Each stream is driven by a dedicated air pump, allowing independent control of airflow rates and precise adjustment of humidity entering the chamber.
 
