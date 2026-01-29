@@ -31,8 +31,8 @@ The input to the controller is the reading from the humidity sensor (Adafruit Se
 # Components: 
 
 _Mechanical_
-- Chamber (32oz: https://tinyurl.com/cbe3300container32oz, square container: )
-- 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air.
+- Chamber (32oz: https://tinyurl.com/cbe3300container32oz, square container: https://tinyurl.com/othercontainer)
+- 2 flasks - one for humid air with aquarium beads, one for the dessicator with dry air. (https://www.indigoinstruments.com/glassware/erlenmeyer_flasks/500ml-erlenmeyer-flask-55207.html?srsltid=AfmBOopTUBJz1xRSZRwkczvqmDJVzZRJL-TcLrCXVP2Cq8P8r6OROCOW) 
 - Dessicator beads (https://www.amazon.com/Premium-Indicating-Silica-Industry-Standard/dp/B013L31PQ0/ref=sr_1_3?crid=RVISUUHO3UJ0&dib=eyJ2IjoiMSJ9._DjEw0TeT2_ClWLr2xpFAjEGwNT1-fvj-2YUOqST7cjMp37gEEVuNHrUyKnISaTJPYOsKh0TMvPe1j9IU56vr4ZTScbDSH2OF1NX4Zrh6qUGD67Qd0-QHvYV8Dgyg-BuFSenUgXwsNF1I4W15Sc_dteR4Um2enCj8SEGEpOm7vtnrCq2MGKcOETgFOxUQpYb7co0gubVIH9oByjkCuNyNLAUp0GO-3MP-Ev4BiqTqWY.SIfMYBUStapbl_nM2Ba1OTG9fvmyZzmUVabAzWcHSmA&dib_tag=se&keywords=dessicator%2Bbeads&qid=1769119978&sprefix=dessicator%2Bbeads%2Caps%2C105&sr=8-3&th=1) 
 - Tubing - bendable silicone tubes (2 rolls of 3mm ID: https://www.adafruit.com/product/4661, 2 rolls of ~3.175mm ID: https://tinyurl.com/tubingforcbe3300b)
 - Gas push tube sealing (https://www.sp-spareparts.com/en/p/qsq-6-4-festo) 
@@ -42,8 +42,8 @@ _Electrical_
 - Hotplate
 - Adafruit control unit (adafruit.com/product/3500?srsltid=AfmBOopctgbF7qVH7y2xIG2ivOXZ61lkIyijYA6622Jabe7w3e4Oubws) 
 - Humidity sensor (https://www.adafruit.com/product/2857?srsltid=AfmBOoqs4Np-P6ohPI5jEt_gJOYip02rR1GwN0GPTHiV_GRCL9Y_RTrb)
-- PN2222 transistor x2
-- 220 Ω resistor x3
-- 1N4001 diode x2
-- 10 kΩ potentiometer
-- LED
+- PN2222 transistor x2 (https://www.adafruit.com/product/756?srsltid=AfmBOoo7C42COf9H8JbmK_CzWmIN2YvXj0G7fIRqkkr9lZ8j5g4WMziS) 
+- 220 Ω resistor x3 (https://www.adafruit.com/product/2780?srsltid=AfmBOorU7fWfvjgyQ9G5W5X2wKHUn3kKfnXNEA0QN95GRun7J6XIEkm8) 
+- 1N4001 diode x2 (https://www.adafruit.com/product/755?srsltid=AfmBOoqwnaH7m_vs5eA3YAm43x0dlSPF-3HmRYoi4unNG2oGFVwZbGND) 
+- 10 kΩ potentiometer (https://www.adafruit.com/product/4272) 
+- Breadboard (https://www.adafruit.com/product/1609) 
