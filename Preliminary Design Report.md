@@ -2,6 +2,8 @@
 
 # Project: 
 
+Humidity chambers are specialized, controlled environments in which a specific relative humidity (RH) value is set. These devices can be used for product quality assurance, testing material durability, and evaluating shelf-life by simulating specific environments to test aging, moisture ingress, or environmental stress. It can also be used in agriculture for grow-chambers and seed germination. 
+
 In this project the humidity of a chamber is controlled to various set points. Using an air pump, air is run through a flask of water and a flask with dessicator beads. As air is bubbled through the water, the outlet stream of the flask delivers humid air to the chamber. As needed, air is run through the flask with dessicator beads to deliver dry air. Based on a set point, a sensor reads the humidity within the chamber, with the signal sent to a controller that adjusts the flow of humid air and dry air coming from the air pump to reach a desired set point. The PFD of the design is shown below. 
 
 <img width="958" height="674" alt="image" src="https://github.com/user-attachments/assets/4c2dd152-7333-41a0-9a31-7b6c79f1536a" />
