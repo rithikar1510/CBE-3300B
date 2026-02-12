@@ -1,0 +1,10 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Remove width limit completely */
+.page-content,
+.wrapper {
+  max-width: 100% !important;
+}
