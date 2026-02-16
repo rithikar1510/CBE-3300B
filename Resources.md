@@ -24,3 +24,8 @@ Adafruit chip - https://www.adafruit.com/product/5346?gad_source=1&gad_campaigni
 
 - Pins A1-A4 can be used for PWM: A0 cannot
 - Using CircuitPython to program the board, but need to install drivers first. Use learn link to install the driver, and you can connect the controller directly to the computer via USB-A to microUSB cord (acquired)
+- to enter REPL mode (where each line of code runs as you write it, which is helpful for troubleshooting), plug in the controller, open the code.py file (from folder that'll pop up in your library) in Mu, and in the Mu interface click the Serial button
+    - serial console will pop up, where you press CTRL + C
+    - there you can type code and run it line by line
+    - all code in REPL is ephemeral and WILL NOT SAVE; ANYTHING YOU WRITE IN REPL SHOULD BE SAVED ELSEWHERE AND WILL BE DELETED THE MOMENT THERE'S A NEW REPL INSTANCE
+    - CTRL + D resets it 
