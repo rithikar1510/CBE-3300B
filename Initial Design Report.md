@@ -8,4 +8,14 @@ Furthermore, integration of automation and artificial intelligence is pushing th
 
 In the market, there is a gap for very small, budget climatic test chambers, especially chambers that only control humidity if temperature is not a variable of concern. The largest cost driver is the temperature control system, as the refridgeration system and heating elements are very expensive due to the number and the quality of the compressors and electronics required. Futhermore, the humidity sensors used for industry R&D have low ranges and margins of error in measurement, leading to a costlier subsystem. These two subsystems together are around 65% of the cost. The rest of the cost comes from the interface, control electronics, and the insulating material, which the most effective chambers used higher cost insulating materials. Our chamber hopes to occupy a space for a cheaper humidity chamber that only focuses on humidity, eliminating one subsystem. The total cost of our chamber would be $68.50, which is far below commercial options. This device would satisfy small scale product testing, such as for academic research or for home-use for preservation of plants, family heirlooms/delicate items, or DIY product development. 
 
+# SWOT Analysis
+
+Strengths: Modular testing facility, allowing for flexibility in product testing and preservatiom, which allows for various, diverse uses. Could be for both industrial or average consumer usage.
+
+Weaknesses: Lower accuracy and for price to remain low, temperature control system must be pared down or not as accurate as industrially available chambers. 
+
+Opportunities: There is a gap in the market for lower cost humidity chambers. Furthermore, the market for climatic test chambers is on the rise, suggesting high demand for this product.
+
+Threats: Industrially available chambers are highly sensitive and include the temperature system. The chamber industry is already well-established with a few producers, so new manufacturers will find it difficult to have a toehold in the market. 
+
 # GANTT Chart
