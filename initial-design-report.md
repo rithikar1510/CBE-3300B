@@ -40,3 +40,5 @@ Threats: Industrially available chambers are highly sensitive and include the te
 # GANTT Chart
 ![Gantt Chart](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/Gantt_Chart.jpg)
 
+The Gantt chart outlines our planned project timeline, including key milestones from preliminary design through prototype development and final demonstration. Our initial prototype build is currently in progress, and we began circuit development last week. At this stage, we are on track with our planned schedule and have approximately two weeks remaining to complete the prototype. Moving forward, we will continue electrical prototyping and chamber assembly in parallel, followed by system integration, control tuning, and performance testing. The Gantt chart will be updated as the project progresses to reflect any adjustments to the timeline.
+
