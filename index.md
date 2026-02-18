@@ -16,14 +16,5 @@ Masha Zotova, Rithika Ramkumar
     Initial Design Report
 </a>
 
-
-  <a href="Preliminary Design Report.md" style="padding:14px 24px; background:#7a0019; color:white; border-radius:6px; text-decoration:none; font-weight:bold; text-align:center;">
-    Preliminary Design Report
-  </a>
-
-  <a href="Resources.md" style="padding:14px 24px; background:#444; color:white; border-radius:6px; text-decoration:none; font-weight:bold; text-align:center;">
-    Resources
-  </a>
-
 </div>
 
