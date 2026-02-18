@@ -1,0 +1,11 @@
+/* assets/css/custom.css */
+
+/* Change base font for body */
+body {
+    font-family: 'Inter', sans-serif; /* or 'Roboto', 'Montserrat', etc. */
+}
+
+/* Change headings font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif; /* different font for headings */
+}
