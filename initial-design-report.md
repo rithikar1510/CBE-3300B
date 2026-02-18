@@ -38,5 +38,5 @@ Opportunities: There is a gap in the market for lower cost humidity chambers. Fu
 Threats: Industrially available chambers are highly sensitive and include the temperature system. The chamber industry is already well-established with a few producers, so new manufacturers will find it difficult to have a toehold in the market. 
 
 # GANTT Chart
-<![Gantt Chart](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/Gantt_Chart.jpg)>
+![Gantt Chart](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/Gantt_Chart.jpg)
 
