@@ -9,3 +9,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif; /* different font for headings */
 }
+
+/* Top bar styling */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a; /* dark bar */
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.top-bar-btn {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.top-bar-btn:hover {
+    background-color: #444;
+}
