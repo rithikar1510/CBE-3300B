@@ -2,6 +2,7 @@
 
 /* Change base font for body */
 body {
+    padding-top: 3rem; /* height of the bar */
     font-family: 'Inter', sans-serif; /* or 'Roboto', 'Montserrat', etc. */
 }
 
