@@ -3,6 +3,11 @@ layout: default
 title: Initial Design Report
 ---
 
+## Jump to Section
+
+- [Market Research](#market-research)
+- [SWOT Analysis](#swot-analysis)
+- [GANTT Chart](#GANTT-chart)
 
 # Market Research
 
@@ -19,6 +24,8 @@ Furthermore, integration of automation and artificial intelligence is pushing th
 ## Where do we come in?
 
 In the market, there is a gap for very small, budget climatic test chambers, especially chambers that only control humidity if temperature is not a variable of concern. The largest cost driver is the temperature control system, as the refridgeration system and heating elements are very expensive due to the number and the quality of the compressors and electronics required. Futhermore, the humidity sensors used for industry R&D have low ranges and margins of error in measurement, leading to a costlier subsystem. These two subsystems together are around 65% of the cost. The rest of the cost comes from the interface, control electronics, and the insulating material, which the most effective chambers used higher cost insulating materials. Our chamber hopes to occupy a space for a cheaper humidity chamber that only focuses on humidity, eliminating one subsystem. The total cost of our chamber would be $68.50, which is far below commercial options. This device would satisfy small scale product testing, such as for academic research or for home-use for preservation of plants, family heirlooms/delicate items, or DIY product development. 
+
+# Price Breakdown
 
 # SWOT Analysis
 
