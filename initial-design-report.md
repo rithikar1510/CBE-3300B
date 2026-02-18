@@ -4,10 +4,13 @@ title: Initial Design Report
 ---
 
 ## Jump to Section
-
+- [ClimaPod](#climapod)
 - [Market Research](#market-research)
 - [SWOT Analysis](#swot-analysis)
 - [GANTT Chart](#GANTT-chart)
+
+# ClimaPod
+
 
 # Market Research
 
