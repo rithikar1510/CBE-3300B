@@ -1,3 +1,8 @@
+---
+layout: default
+title: Initial Design Report
+---
+
 # Market Research
 
 ## Uses
