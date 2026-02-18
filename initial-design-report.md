@@ -12,6 +12,8 @@ title: Initial Design Report
 # ClimaPod
 ClimaPod is a compact, low-cost humidity-controlled chamber designed to provide precise environmental control within small, enclosed volumes. In many laboratory and small-scale storage settings, humidity can fluctuate significantly due to ambient conditions, making it difficult to maintain stable moisture levels using passive methods alone. ClimaPod addresses this challenge by enabling users to specify target humidity set points and actively regulating the internal environment to maintain those conditions over time.
 
+![ClimaPod](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/Gantt_Chart.jpg)
+
 # Market Research
 
 ## Uses
