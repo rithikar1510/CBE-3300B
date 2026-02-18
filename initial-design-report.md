@@ -16,7 +16,9 @@ ClimaPod is a compact, low-cost humidity-controlled chamber designed to provide 
 ![ClimaPod](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/ClimaPod.jpg)
 
 # Design Concept
-This diagram illustrates the design concept of ClimaPod. Two air streams are generated using separate air pumps: one stream is dried by passing through desiccant beads, while the other is humidified by bubbling air through heated water. Both air streams are delivered into the chamber, where they mix to regulate the internal humidity. A humidity sensor inside the chamber provides feedback to the controller, which adjusts the relative flow rates of the two air streams to maintain stable humidity conditions.
+This diagram illustrates the overall design concept of ClimaPod and how humidity is actively regulated within the chamber. Two separate air streams are generated using individual air pumps. One air stream is passed through a container filled with desiccant beads, which removes moisture from the air and produces a dry air stream. The second air stream is bubbled through heated water, allowing the air to become saturated with moisture before entering the chamber as humidified air. These two streams are introduced into the chamber, where they mix to produce the desired humidity level.
+
+A humidity sensor placed inside the chamber continuously monitors the internal environmental conditions and sends this information to the controller. Based on the difference between the measured humidity and the desired set point, the controller adjusts the relative flow rates of the dry and humid air streams. This closed-loop control strategy allows ClimaPod to maintain stable humidity over time, even in the presence of disturbances such as changes in ambient conditions or small leaks in the chamber.
 
 ![ClimaPod Design Concept](https://raw.githubusercontent.com/rithikar1510/CBE-3300B/main/Design_concept.jpg)
 
