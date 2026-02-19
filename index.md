@@ -16,15 +16,12 @@
   <!-- Header -->
   <header class="text-center py-5" style="background-color: #1e6f5c; color: white;">
     <h1>CBE3300B Project Hub</h1>
-    <p>Explore ongoing and completed projects</p>
+    <p>Explore our ongoing and completed project to create a humidity chamber.</p>
     <nav>
       <a href="#about" class="btn btn-outline-light m-2">About</a>
-      <a href="#projects" class="btn btn-outline-light m-2">Projects</a>
-      <a href="#milestones" class="btn btn-outline-light m-2">Milestones</a>
-      <a href="final_resources/final.html" class="btn btn-outline-light m-2" target="_blank">🏆 Final</a>
+      <a href="#preliminary design report" class="btn btn-outline-light m-2">Milestones</a>
+      <a href="#initial design report" class="btn btn-outline-light m-2">Milestones</a>
       <a href="#gantt" class="btn btn-outline-light m-2">GANTT Schedule</a>
-      <a href="#assignments" class="btn btn-outline-light m-2">Assignments</a>
-      <a href="#contact" class="btn btn-outline-light m-2">Contact</a>
     </nav>
   </header>
 
@@ -32,28 +29,17 @@
   <section id="about" class="container py-5">
     <h2 class="text-primary">About</h2>
     <p>
-      This repository serves as a hub for CBE3300B-related projects. The goal is to document, share, and collaborate on research, experiments, and results. 
+      This repository serves as a hub for our CBE3300B humidity chamber project. The goal is to document, share, and collaborate on research, experiments, and results. 
       Each project section includes its objectives, materials, and development status.
     </p>
   </section>
 
-  <!-- Milestones Section -->
-  <section id="milestones" class="container py-5">
-    <h2 class="text-primary">Project Milestones</h2>
-    <ul class="nav nav-tabs" id="milestoneTabs" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="Milestones/Milestone1.html" target="_blank">🏁 Milestone 1</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="Milestones/Milestone2.html" target="_blank">🚀 Milestone 2</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="Milestones/Milestone3.html" target="_blank">🔬 Milestone 3</a>
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="Milestones/Milestone4.html" target="_blank">🎯 Milestone 4</a>
-      </li>
-    </ul>
+  <!-- PDR Section -->
+  <section id="preliminary design report" class="container py-5">
+    <h2 class="text-primary">About</h2>
+    <p>
+      This is our preliminary design report.
+    </p>
   </section>
 
   <!-- GANTT Schedule Section -->
@@ -68,24 +54,6 @@
     <iframe src="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/preview" width="100%" height="600px" style="border: none;"></iframe>
   </section>
 
-  <!-- Assignments Section -->
-  <section id="assignments" class="container py-5">
-    <h2 class="text-primary">Side Assignments</h2>
-    <p>Additional assignments related to CBE3300B.</p>
-
-    <h3>3D Printing</h3>
-    <h4>Download Our CAD File</h4>
-    <p>Here’s the CAD model used in Milestone 4. You can download it below:</p>
-    <a href="Top2.STL" download class="btn btn-primary">⬇️ Download STL File</a>
-    <p>This subsection will cover <strong>3D printing projects</strong>, methodologies, and related coursework for CBE3300B. More details will be added soon.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="text-center py-5" style="background-color: #1e6f5c; color: white;">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bpaulina@seas.upenn.edu" class="text-light">bpaulina@seas.upenn.edu</a></p>
-    <p>GitHub: <a href="https://github.com/bpaulina25/CBE3300B" class="text-light">CBE3300B Repository</a></p>
-  </section>
 
   <!-- Footer -->
   <footer class="text-center py-3" style="background-color: #1e6f5c; color: white;">
@@ -121,29 +89,6 @@ Milestone4.html" target="_blank">
       </a>
     </p>
     <iframe src="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/preview" width="100%" height="600px" style="border: none;"></iframe>
-  </section>
-
-  <!-- Assignments Section -->
-  <section id="assignments" class="container py-5">
-    <h2 class="text-primary">Side Assignments</h2>
-    <p>Additional assignments related to CBE3300B.</p>
-
-    <!-- 3D Printing Subsection -->
-    <h3>3D Printing</h3>
-    <h4>Download Our CAD File</h4>
-    <p>Here’s the CAD model used in Milestone 4. You can download it below:</p>
-    <a href="Top2.STL" download class="btn btn-primary">⬇️ Download STL File</a>
-    <p>
-      This subsection will cover <strong>3D printing projects</strong>, methodologies, and related coursework for CBE3300B.
-      More details will be added soon.
-    </p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="text-center py-5" style="background-color: #1e6f5c; color: white;">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bpaulina@seas.upenn.edu" class="text-light">bpaulina@seas.upenn.edu</a></p>
-    <p>GitHub: <a href="https://github.com/bpaulina25/CBE3300B" class="text-light">CBE3300B Repository</a></p>
   </section>
 
   <!-- Footer -->
