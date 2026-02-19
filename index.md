@@ -164,19 +164,7 @@ Milestone4.html" target="_blank">
       </div>
     </div>
   </section>
-
-  <!-- GANTT Schedule Section -->
-  <section id="gantt" class="container py-5">
-    <h2 class="text-primary">Project Timeline</h2>
-    <p>View our project schedule using the GANTT chart:</p>
-    <p>
-      <a href="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/edit?usp=sharing" target="_blank" class="btn btn-success">
-        📅 View GANTT Schedule
-      </a>
-    </p>
-    <iframe src="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/preview" width="100%" height="600px" style="border: none;"></iframe>
-  </section>
-
+  
   <!-- Footer -->
   <footer class="text-center py-3" style="background-color: #1e6f5c; color: white;">
     <p>&copy; 2025 CBE3300B | Designed by Paulina Bargallo</p>
