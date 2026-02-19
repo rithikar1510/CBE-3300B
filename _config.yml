@@ -1,9 +1,0 @@
-remote_theme: pages-themes/architect@v0.2.0
-
-# Include custom CSS
-sass:
-  style: compressed
-
-# Add custom CSS
-include:
-  - assets/css/custom.css
