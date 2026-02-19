@@ -47,11 +47,11 @@
     <h2 class="text-primary">Project Timeline</h2>
     <p>View our project schedule using the GANTT chart:</p>
     <p>
-      <a href="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/edit?usp=sharing" target="_blank" class="btn btn-success">
+      <a href="https://docs.google.com/spreadsheets/d/12-z6ueIstVCXI8U_jozlMdH24LCAA0FeEc4j1kiNmzk/edit?usp=sharing" target="_blank" class="btn btn-success">
         📅 View GANTT Schedule
       </a>
     </p>
-    <iframe src="https://docs.google.com/spreadsheets/d/19b4tQyq3dYm4ijzws2hTFp0yeTZAH9Zb37dlXd-GJd4/preview" width="100%" height="600px" style="border: none;"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/12-z6ueIstVCXI8U_jozlMdH24LCAA0FeEc4j1kiNmzk/edit?usp=sharing" width="100%" height="600px" style="border: none;"></iframe>
   </section>
 
 
