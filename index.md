@@ -160,23 +160,6 @@ An LED is placed on the breadboard:
   </tbody>
 </table>
 
-
-
-| Item | Quantity | Link |
-| --- | --- | --- |
-| Chamber | 1 | <a href="https://tinyurl.com/othercontainer">Amazon Suclain 2 Pcs Square Food Storage Container</a> |
-| Plastic Resevoirs (humid and dry airlines) | 2 | <a href="https://www.amazon.com/ASEVAT-Leak-proof-Container-Translucent-Containers/dp/B0DSP2WHTW/ref=sr_1_10_sspa?crid=3GUXLGM9JGLI9&dib=eyJ2IjoiMSJ9.JCFmWnBryUBxMzInTekbPmtgNwl72-cKg6FuGYImiB-_aKz8iKfssCPKzVd3gqb_Id1VPtukAdbMhwt8qb_57fkYIyeJ9PkAphm6OQOa_R5fiMmKDQq_nrT8Dpqq61jdk-cIqxgM1HRBleR3eDLIm3BTtYHzjv9kPdqfda1g9jzy_bexMM_D-DdhXdr6Eh1njzrBNQBtVh9Vm-iZRjCWCr5PFz1vT93xT3GFC0JxWjuA-_VgsBnZEcZY-b_FKJcPx4OpF3kbGe8fCYF7ZyXTi_zT4EyjWfuSzanB_6mmRYo.EcwL_ghv7Aq6NKJX0SNyQh-HNkv2rkxLvBeKLHkOi5o&dib_tag=se&keywords=plastic%2Bvials&qid=1769724905&s=industrial&sprefix=plastic%2Bvials%2B%2Cindustrial%2C105&sr=1-10-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">ASEVAT 10 Pcs 2 oz Airtight Pill Bottles Wide Mouth Reagent Lab Bottle</a> |
-| Dessicator beads | 0.5 lbs | <a href="https://www.amazon.com/Premium-Indicating-Silica-Industry-Standard/dp/B013L31PQ0/ref=sr_1_3?crid=RVISUUHO3UJ0&dib=eyJ2IjoiMSJ9._DjEw0TeT2_ClWLr2xpFAjEGwNT1-fvj-2YUOqST7cjMp37gEEVuNHrUyKnISaTJPYOsKh0TMvPe1j9IU56vr4ZTScbDSH2OF1NX4Zrh6qUGD67Qd0-QHvYV8Dgyg-BuFSenUgXwsNF1I4W15Sc_dteR4Um2enCj8SEGEpOm7vtnrCq2MGKcOETgFOxUQpYb7co0gubVIH9oByjkCuNyNLAUp0GO-3MP-Ev4BiqTqWY.SIfMYBUStapbl_nM2Ba1OTG9fvmyZzmUVabAzWcHSmA&dib_tag=se&keywords=dessicator%2Bbeads&qid=1769119978&sprefix=dessicator%2Bbeads%2Caps%2C105&sr=8-3&th=1">Silica Desiccants Beads</a> |
-| 3 mm ID Silicon Tubing | 2 rolls | <a href="https://www.adafruit.com/product/4661">Silicone Tubing for Air Pumps and Valves</a> | 
-| Air pumps | 2 | <a href="https://www.adafruit.com/product/4699">Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM</a> | 
-| Microcontroller | 1 | <a href="adafruit.com/product/3500?srsltid=AfmBOopctgbF7qVH7y2xIG2ivOXZ61lkIyijYA6622Jabe7w3e4Oubws">Adafruit Trinket M0</a> | 
-| Humidity Sensor | 1 | <a href="https://www.adafruit.com/product/2857?srsltid=AfmBOoqs4Np-P6ohPI5jEt_gJOYip02rR1GwN0GPTHiV_GRCL9Y_RTrb">Adafruit SHT31 Humidity Sensor</a> | 
-| Potentiometer | 1 | <a href="https://www.adafruit.com/product/4272">10 kΩ potentiometer</a> | 
-| Breadboard | 2 | <a href="https://www.adafruit.com/product/1609">Adafruit Breadboard</a> | 
-| Heating Pad | 2 | <a href="https://www.adafruit.com/product/1481?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvR97CeB5cWs3SDTGd6_GFXD-&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjG0pcvWwEmo3NjDLNvYbbM8M9ByCQaJ4RD1xlkxkuu-bqjk-bu4iRkaAj8AEALw_wcB">Electric Heating Pad - 10cm x 5cm </a> | 
-
-
-
   </p>
   </section>
 
@@ -192,14 +175,8 @@ An LED is placed on the breadboard:
     <iframe src="https://docs.google.com/spreadsheets/d/12-z6ueIstVCXI8U_jozlMdH24LCAA0FeEc4j1kiNmzk/edit?usp=sharing" width="100%" height="600px" style="border: none;"></iframe>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-3" style="background-color: #1e6f5c; color: white;">
-    <p>&copy; 2025 CBE3300B | Designed by Paulina Bargallo</p>
-  </footer>
 </body>
 </html>
-Milestone4.html" target="_blank">
-    🎯 Milestone 4
   </a>
 </li>
 
