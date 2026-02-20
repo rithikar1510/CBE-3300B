@@ -36,21 +36,19 @@
 
   <!-- PDR Section -->
   <section id="preliminary design report" class="container py-5">
-    <h2 class="text-primary">About</h2>
+    <h2 class="text-primary">Preliminary Design Report</h2>
+    <h2 class="text-secondary">Project</h2>
     <p>
-      # Preliminary Design Report
-
-# Project: 
-
-Humidity chambers are specialized, controlled environments in which a specific relative humidity (RH) value is set. These devices can be used for product quality assurance, testing material durability, and evaluating shelf-life by simulating specific environments to test aging, moisture ingress, or environmental stress. It can also be used in agriculture for grow-chambers and seed germination. 
+    
+Humidity chambers are specialized, controlled environments in which a specific relative humidity (RH) value is set. These devices can be used for product quality       assurance, testing material durability, and evaluating shelf-life by simulating specific environments to test aging, moisture ingress, or environmental stress. It can also be used in agriculture for grow-chambers and seed germination. 
 
 In this project the humidity of a chamber is controlled to various set points. Using an air pump, air is run through a flask of water and a flask with dessicator beads. As air is bubbled through the water, the outlet stream of the flask delivers humid air to the chamber. As needed, air is run through the flask with dessicator beads to deliver dry air. Based on a set point, a sensor reads the humidity within the chamber, with the signal sent to a controller that adjusts the flow of humid air and dry air coming from the air pump to reach a desired set point. The PFD of the design is shown below. 
 
 <img width="958" height="674" alt="image" src="https://github.com/user-attachments/assets/4c2dd152-7333-41a0-9a31-7b6c79f1536a" />
 
-# Premise: 
+<h2 class="text-secondary">Premise</h2> 
 
-### Physical/Chemical Principles:
+<h2 class="text-muted">Physical/Chemical Principles:</h2> 
 
 In this device, a controller is used to change the flow rates of two air streams to manage the relative humidity (RH) of a chamber. Relative humidity is the ratio of the current humidity to the maximum humidity level air can hold at a specific temperature and pressure. This device will run at atmospheric pressure and the chamber will likely be at around room temperature, due to likely negligible heat being transferred from the humid air stream to the chamber.
 
