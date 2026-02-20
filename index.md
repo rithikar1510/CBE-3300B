@@ -196,7 +196,8 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 <h2 class="text-muted">SWOT Analysis:</h2> 
 
 <img width="1118" height="628" alt="image" src="https://github.com/user-attachments/assets/d982f4b4-1707-4d95-b286-eda12781a12c" />
-    </p>
+
+</p>
 
   <!-- GANTT Schedule Section -->
   <section id="gantt" class="container py-5">
