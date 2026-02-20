@@ -18,8 +18,8 @@
     <p>Explore our ongoing and completed project to create a humidity chamber.</p>
     <nav>
       <a href="#about" class="btn btn-outline-light m-2">About</a>
-      <a href="#preliminary design report" class="btn btn-outline-light m-2">Milestones</a>
-      <a href="#initial design report" class="btn btn-outline-light m-2">Milestones</a>
+      <a href="#preliminary design report" class="btn btn-outline-light m-2">Preliminary Design Report</a>
+      <a href="#initial design report" class="btn btn-outline-light m-2">Initial Design Report</a>
       <a href="#gantt" class="btn btn-outline-light m-2">GANTT Schedule</a>
     </nav>
   </header>
@@ -97,6 +97,7 @@ An LED is placed on the breadboard:
 
 <h2 class="text-muted">Item list</h2> 
 
+
 <table>
   <thead>
     <tr>
@@ -159,6 +160,7 @@ An LED is placed on the breadboard:
   </tbody>
 </table>
 
+
 | Item | Quantity | Link |
 | --- | --- | --- |
 | Chamber | 1 | <a href="https://tinyurl.com/othercontainer">Amazon Suclain 2 Pcs Square Food Storage Container</a> |
@@ -171,6 +173,7 @@ An LED is placed on the breadboard:
 | Potentiometer | 1 | <a href="https://www.adafruit.com/product/4272">10 kΩ potentiometer</a> | 
 | Breadboard | 2 | <a href="https://www.adafruit.com/product/1609">Adafruit Breadboard</a> | 
 | Heating Pad | 2 | <a href="https://www.adafruit.com/product/1481?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvR97CeB5cWs3SDTGd6_GFXD-&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjG0pcvWwEmo3NjDLNvYbbM8M9ByCQaJ4RD1xlkxkuu-bqjk-bu4iRkaAj8AEALw_wcB">Electric Heating Pad - 10cm x 5cm </a> | 
+
 
   </p>
   </section>
