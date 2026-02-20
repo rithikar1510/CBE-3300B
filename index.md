@@ -195,13 +195,7 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 
 <h2 class="text-muted">SWOT Analysis:</h2> 
 
-Strengths: Modular testing facility, allowing for flexibility in product testing and preservatiom, which allows for various, diverse uses. Could be for both industrial or average consumer usage.
-
-Weaknesses: Lower accuracy and for price to remain low, temperature control system must be pared down or not as accurate as industrially available chambers. 
-
-Opportunities: There is a gap in the market for lower cost humidity chambers. Furthermore, the market for climatic test chambers is on the rise, suggesting high demand for this product.
-
-Threats: Industrially available chambers are highly sensitive and include the temperature system. The chamber industry is already well-established with a few producers, so new manufacturers will find it difficult to have a toehold in the market. 
+<img width="1118" height="628" alt="image" src="https://github.com/user-attachments/assets/d982f4b4-1707-4d95-b286-eda12781a12c" />
     </p>
 
   <!-- GANTT Schedule Section -->
