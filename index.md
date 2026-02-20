@@ -173,25 +173,6 @@ An LED is placed on the breadboard:
       </a>
     </p>
     <iframe src="https://docs.google.com/spreadsheets/d/12-z6ueIstVCXI8U_jozlMdH24LCAA0FeEc4j1kiNmzk/edit?usp=sharing" width="100%" height="600px" style="border: none;"></iframe>
-  </section>
-
-</body>
-</html>
-  </a>
-</li>
-
-
-    <div class="tab-content" id="milestoneTabsContent">
-      <!-- Keep Milestone 4 tabs and content untouched -->
-      <div class="tab-pane fade show active" id="milestone4" role="tabpanel" aria-labelledby="milestone4-tab">
-        <!-- Your existing Milestone 4 content here -->
-      </div>
-
-      <div class="tab-pane fade" id="milestone4-pot" role="tabpanel" aria-labelledby="milestone4-pot-tab">
-        <!-- Your existing Milestone 4 Potentiostat content here -->
-      </div>
-    </div>
-  </section>
   
   <!-- Footer -->
   <footer class="text-center py-3" style="background-color: #1e6f5c; color: white;">
