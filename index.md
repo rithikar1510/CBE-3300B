@@ -97,6 +97,68 @@ An LED is placed on the breadboard:
 
 <h2 class="text-muted">Item list</h2> 
 
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chamber</td>
+      <td>1</td>
+      <td><a href="https://tinyurl.com/othercontainer" target="_blank">Amazon Suclain 2 Pcs Square Food Storage Container</a></td>
+    </tr>
+    <tr>
+      <td>Plastic Resevoirs (humid and dry airlines)</td>
+      <td>2</td>
+      <td><a href="https://www.amazon.com/ASEVAT-Leak-proof-Container-Translucent-Containers/dp/B0DSP2WHTW/" target="_blank">ASEVAT 10 Pcs 2 oz Airtight Pill Bottles Wide Mouth Reagent Lab Bottle</a></td>
+    </tr>
+    <tr>
+      <td>Dessicator beads</td>
+      <td>0.5 lbs</td>
+      <td><a href="https://www.amazon.com/Premium-Indicating-Silica-Industry-Standard/dp/B013L31PQ0/" target="_blank">Silica Desiccants Beads</a></td>
+    </tr>
+    <tr>
+      <td>3 mm ID Silicon Tubing</td>
+      <td>2 rolls</td>
+      <td><a href="https://www.adafruit.com/product/4661" target="_blank">Silicone Tubing for Air Pumps and Valves</a></td>
+    </tr>
+    <tr>
+      <td>Air pumps</td>
+      <td>2</td>
+      <td><a href="https://www.adafruit.com/product/4699" target="_blank">Adafruit Air Pump and Vacuum DC Motor - 4.5 V and 2.5 LPM</a></td>
+    </tr>
+    <tr>
+      <td>Microcontroller</td>
+      <td>1</td>
+      <td><a href="https://www.adafruit.com/product/3500" target="_blank">Adafruit Trinket M0</a></td>
+    </tr>
+    <tr>
+      <td>Humidity Sensor</td>
+      <td>1</td>
+      <td><a href="https://www.adafruit.com/product/2857" target="_blank">Adafruit SHT31 Humidity Sensor</a></td>
+    </tr>
+    <tr>
+      <td>Potentiometer</td>
+      <td>1</td>
+      <td><a href="https://www.adafruit.com/product/4272" target="_blank">10 kΩ potentiometer</a></td>
+    </tr>
+    <tr>
+      <td>Breadboard</td>
+      <td>2</td>
+      <td><a href="https://www.adafruit.com/product/1609" target="_blank">Adafruit Breadboard</a></td>
+    </tr>
+    <tr>
+      <td>Heating Pad</td>
+      <td>2</td>
+      <td><a href="https://www.adafruit.com/product/1481" target="_blank">Electric Heating Pad - 10cm x 5cm</a></td>
+    </tr>
+  </tbody>
+</table>
+
 | Item | Quantity | Link |
 | --- | --- | --- |
 | Chamber | 1 | <a href="https://tinyurl.com/othercontainer">Amazon Suclain 2 Pcs Square Food Storage Container</a> |
@@ -109,7 +171,8 @@ An LED is placed on the breadboard:
 | Potentiometer | 1 | <a href="https://www.adafruit.com/product/4272">10 kΩ potentiometer</a> | 
 | Breadboard | 2 | <a href="https://www.adafruit.com/product/1609">Adafruit Breadboard</a> | 
 | Heating Pad | 2 | <a href="https://www.adafruit.com/product/1481?gad_source=1&gad_campaignid=21079227318&gbraid=0AAAAADx9JvR97CeB5cWs3SDTGd6_GFXD-&gclid=Cj0KCQiAhtvMBhDBARIsAL26pjG0pcvWwEmo3NjDLNvYbbM8M9ByCQaJ4RD1xlkxkuu-bqjk-bu4iRkaAj8AEALw_wcB">Electric Heating Pad - 10cm x 5cm </a> | 
-    </p>
+
+  </p>
   </section>
 
   <!-- GANTT Schedule Section -->
