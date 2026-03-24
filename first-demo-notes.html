@@ -76,4 +76,77 @@ while True:
         print("LED BRIGHT")
     
     time.sleep(2)
-    
+
+# Checkpoint 3/24/26: Got the motors to work! Pinout: 
+
+Connect the battery to the MOSFETS (MOSFETS have a + and - labelled for the motor wires. Plug in + of battery to + of MOSFET and - of battery to - of MOSFET. One battery
+(4 1.5 V batteries) is enough for both MOSFETS. Then connect GRD of MOSFET (using 3 wires or the pins) to common GRD with Trinket M0 and SHT31d, Vin to + battery, and
+the In pin/wire to D3 and D4 (3 and 4) on the Trinket M0. For preliminary test of motors, where they'll alternate for 2 sec apiece: 
+
+
+import board
+import digitalio
+import time
+
+motor1 = digitalio.DigitalInOut(board.D3)
+motor1.direction = digitalio.Direction.OUTPUT
+
+motor2 = digitalio.DigitalInOut(board.D4)
+motor2.direction = digitalio.Direction.OUTPUT
+
+while True:
+    print("Motor 1 ON")
+    motor1.value = True
+    motor2.value = False
+    time.sleep(3)
+
+    print("Motor 2 ON")
+    motor1.value = False
+    motor2.value = True
+    time.sleep(3)
+
+Then do the usual connection of SHT31d to the Trinket M0. Run the following code. As humidity is above 40, one motor turns on. As humidity is below 20, the other motor
+turns on. 
+
+import board
+import busio
+import digitalio
+import time
+import adafruit_sht31d
+
+# I2C setup
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = adafruit_sht31d.SHT31D(i2c)
+
+# Pumps
+pump_high = digitalio.DigitalInOut(board.D3)  # humid → pump 1
+pump_low = digitalio.DigitalInOut(board.D4)   # dry → pump 2
+
+pump_high.direction = digitalio.Direction.OUTPUT
+pump_low.direction = digitalio.Direction.OUTPUT
+
+# Thresholds (adjust these!)
+HIGH_THRESHOLD = 40  # % humidity
+LOW_THRESHOLD = 20   # % humidity
+
+while True:
+    humidity = sensor.relative_humidity
+    print("Humidity:", humidity)
+
+    if humidity is not None:
+        if humidity > HIGH_THRESHOLD:
+            # Too humid → run pump 1
+            pump_high.value = True
+            pump_low.value = False
+
+        elif humidity < LOW_THRESHOLD:
+            # Too dry → run pump 2
+            pump_high.value = False
+            pump_low.value = True
+
+        else:
+            # In between → both off
+            pump_high.value = False
+            pump_low.value = False
+
+    time.sleep(2)
