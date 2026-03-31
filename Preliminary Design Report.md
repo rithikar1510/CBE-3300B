@@ -1,3 +1,7 @@
+---
+layout: default
+title: Preliminary Design Report
+---
 # Preliminary Design Report
 
 # Project: 
