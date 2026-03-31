@@ -215,7 +215,7 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
       I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: 
 
 | Adafruit Trinket Pin | Adafruit SHT31d 2 |
-|---|---|---|
+|---|---|
 | Trinket M0 Pin 0 | SHT31 SDA | 
 | Trinket M0 Pin 2 | SHT31 SCL | 
 | Trinket M0 Gnd | SHT31 GND | 
