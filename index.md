@@ -239,8 +239,19 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
   </p>
 
   ```python
-  def hello_world():
-    print("Hello, GitHub!")
+  import board
+  import busio
+import adafruit_sht31d
+import time
+
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = adafruit_sht31d.SHT31D(i2c)
+
+while True:
+    print("Temp:", sensor.temperature)
+    print("Humidity:", sensor.relative_humidity)
+    print("-----")
+    time.sleep(2)
   ```
 
   <!-- GANTT Schedule Section -->
