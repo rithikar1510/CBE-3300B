@@ -54,3 +54,4 @@ while True:
     print("Humidity:", sensor.relative_humidity)
     print("-----")
     time.sleep(2)
+```
