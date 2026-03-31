@@ -212,7 +212,7 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
     </p>
     <h3 class="text-secondary">I2C Connections and Wiring</h3> 
     <p>
-      I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. See the [pinout](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/pinouts?gad_source=1&gad_campaignid=21079267614&gbraid=0AAAAADx9JvSdZxQ4pdjQeP3j92_3XTvmM&gclid=EAIaIQobChMI1tiM06fKkwMVTlRHAR21fiXZEAAYASAAEgIqL_D_BwE) at learn.adafruit. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: 
+      I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: 
 
 | Adafruit Trinket Pin | Adafruit SHT31d 2 |
 |---|---|---|
@@ -220,6 +220,10 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 | Trinket M0 Pin 2 | SHT31 SCL | 
 | Trinket M0 Gnd | SHT31 GND | 
 | Trinket M0 3V | SHT31 Vin | 
+
+<img width="1024" height="369" alt="image" src="https://github.com/user-attachments/assets/bcfa3530-957d-40df-a984-a5bf0084884c" />
+
+<img width="1024" height="779" alt="image" src="https://github.com/user-attachments/assets/90e3d529-8db6-499e-bd77-20dbe5156854" />
 
   </p>
     <h3 class="text-secondary">Trinket Libraries</h3> <p>
