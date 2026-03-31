@@ -20,7 +20,7 @@
       <a href="#about" class="btn btn-outline-light m-2">About</a>
       <a href="#preliminary design report" class="btn btn-outline-light m-2">Preliminary Design Report</a>
       <a href="#initial design report" class="btn btn-outline-light m-2">Initial Design Report</a>
-      <a href="#initial prototype" class="btn btn-outline-light m-2">Initial Prototype</a>
+      <a href="#initial-prototype" class="btn btn-outline-light m-2">Initial Prototype</a>
       <a href="#gantt" class="btn btn-outline-light m-2">GANTT Schedule</a>
     </nav>
   </header>
@@ -201,7 +201,7 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 </p>
 
   <!-- Initial Prototype Section -->
-  <section id="about" class="container py-5">
+  <section id="initial-prototype" class="container py-5">
     <h2 class="text-primary">Initial Prototype</h2>
     <p>
       This section goes over the various checkpoints and updates as the initial prototype is being designed. 
@@ -237,8 +237,8 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
   </p>
 
   ```python
-  import board
-  import busio
+import board
+import busio
 import adafruit_sht31d
 import time
 
