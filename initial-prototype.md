@@ -114,7 +114,7 @@ Due to the lower voltage from the Trinket M0, 2 MOSFETs (Adafruit MOSFET Driver 
 
 ### Preliminary Motor Testing 
 
-Due to the lower voltage from the Trinket M0, 2 MOSFETs (Adafruit MOSFET Driver - For Motors, Solenoids, LEDs, etc - STEMMA JST PH 2mm) were purchased. Two MOSFET's are necessary because there are two pumps, and each pump requires its own MOSFET so that the lower voltage from the Trinket M0 can be used to modulate these higher voltage motors. In tihs setup, a common power source (4 1.5V batteries - i.e. 4 AA batteries) were used to power the MOSFETs. GRD was supplied by the Trinket M0 (GRD pin) and it is important that the negative terminal of the batteries, GRD of the MOSFETS, and GRD of the SHT31d are all common grounds. This was just on-off control; no PWM was used yet.
+This was just on-off control; no PWM was used yet.
 
 #### Connections
 Connect the battery to the MOSFETS (MOSFETS have a + and - labelled for the motor wires. Plug in + of battery to + of MOSFET and - of battery to - of MOSFET. One battery (4 1.5 V batteries) is enough for both MOSFETS. Then connect GRD of MOSFET (using 3 wires or the pins) to common GRD with Trinket M0 and SHT31d, Vin to + battery, and the In pin/wire to D3 and D4 (3 and 4) on the Trinket M0. For preliminary test of motors, where they'll alternate for 2 sec apiece:
