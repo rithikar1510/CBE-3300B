@@ -227,9 +227,21 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 
   </p>
     <h3 class="text-secondary">Trinket Libraries</h3> <p>
-      The Adafruit Trinket M0 requires specific libraries to be used with the SHT31d. Four libraries must be imported first: board, time, adafruit_sht31d, and busio. The board library is what maps the physical pins to their digital identifiers (i.e. board.D0, board.D1, etc) which is necessary to communicate which pins are connected to which inputs to print results and manipulate them. The time library is necessary for I2C connections as they permit connection with the SCL line. Similarly, the busio library allows connection with the SDA line. 
+      The Adafruit Trinket M0 requires specific libraries to be used with the SHT31d. Four libraries must be imported first: board, time, adafruit_sht31d, and busio.       
+      The board library is what maps the physical pins to their digital identifiers (i.e. board.D0, board.D1, etc) which is necessary to communicate which pins are connected to which inputs to print results and manipulate them.      
+      The time library is necessary for I2C connections as they permit connection with the SCL line. 
+      Similarly, the busio library allows connection with the SDA line. busio needs to be added explicitly to the libraries available on the Trinket M0 as the functions from busio are not built in; this is done by using Adafruit's Github repository of libraries. The folder adafruit_bus_device must be added to the lib folder on the CIRCUITPY(:D) drive that opens when the Trinket M0 is connected to a laptop. 
+      The adafruit_sht31d library is the library necessary to interface with the humidity sensor. Similar to busio, the adafruit_sht31d.mpy and adafruit_sht4x.mpy files must be added to the lib folder of the Trinket M0.
     </p>
 
+  <h3 class="text-secondary">Coding the Trinket M0 and Getting Results</h3> <p>
+    Coding the controller is done using Mu, which uses Circuit Python (an abridged version of Python) to control the Trinket M0. The code below prints the humidty and temperature of the environment around the SHT31d. 
+  </p>
+
+  ```python
+  def hello_world():
+    print("Hello, GitHub!")
+  ```
 
   <!-- GANTT Schedule Section -->
   <section id="gantt" class="container py-5">
