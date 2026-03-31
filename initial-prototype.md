@@ -54,3 +54,32 @@ while True:
     print("-----")
     time.sleep(2)
   ```
+  <h2 class="text-secondary">Checkpoint 3/5/2026</h2> 
+  <p>
+    The goal of this checkpoint was to drive the airpumps (each 4.5V) using a reading from the humidity sensor, but given that the maximum voltage the Trinket M0 can handle is 3V, it was difficult to turn the pumps on in any meaningful way. Each using a 2N222 transistor, the controller could not switch the air pumps on and off without the transistor heating up significantly. Instead, we chose to use an LED as an analog to the airpumps, hoping to use PWM to modulate the LED's output from dim to very bright depending on the reading of the SHT31d. In this checkpoint, we got the PWM to work with the LED based off a reading from the humidity sensor. In this setup, based off the reading from the sensor, the LED (red) switches to BRIGHT or DIM, corresponding to different duty cycle (BRIGHT = 65535, the max val, DIM = 3768 (arbitrary small value)). 
+  </p>
+  <h3 class="text-secondary">Connections</h3> <p>
+    Connection is as follows:
+
+The positive of the battery terminal (4 1.5V batteries (AA) in series) is connected to the collector of a 2N2222 transistor. 
+
+The base of the transistor is connected to pin D4 on the Adafruit Trinket M0 (this is just labelled pin 4). This is how the controller is turning the "switch" (i.e. the transistor) to get different readings. 
+
+The emitter of the transistor is connected to a 220 ohm resistor (red-red-brown-gold, nonprecision) and the resistor is connected to the cathode (long end) of the red LED. I.e. the flow from the emitter is emitter --> 220 ohm resistor --> cathode of LED. The anode of the LED (short end) is connected to the negative terminal of the battery. This is also shared with the ground on the collector. The way this looks is that in one column, the anode, a wire from Gnd on the controller, and the black wire from the batteries are connected. 
+
+The humidity sensor is then connected to the controller. There the Vin on the sensor is connected to 3V on the controller, GND on the controller is connected to GND on the sensor, SCL on the sensor is connected to pin 2 (D2) on the controller, and SDA on the sensor is connected to pin 0 (D0) on the controller. It is important that pin 2 and 0 are used for the sensor since this is an I2C connection, and PWM is available for many of the D pins on the controller but I2C isn't. Therefore pins 0 and 2 should be "saved" for the sensor. 
+
+This circuit is then connected to a laptop via USB-A to micro-USB (like before) and the controller has the following code. The 36.0 threshold was ENTIRELY arbitrary and used for the sake of testing to make sure the LED switched from BRIGHT to DIM. Pick whatever threshold you want. 
+  </p>
+  <h3 class="text-secondary">Connections</h3> <p>
+The following import statements must be included:   </p>
+
+```python
+import board
+import pwmio
+import time
+import busio
+import adafruit_sht31d
+```
+
+
