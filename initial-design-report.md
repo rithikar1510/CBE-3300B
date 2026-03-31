@@ -40,6 +40,8 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 
 # Price Breakdown
 
+<img width="790" height="665" alt="image" src="https://github.com/user-attachments/assets/cfe27137-479f-43a1-b5e4-de245a37693e" />
+
 # SWOT Analysis
 
 Strengths: Modular testing facility, allowing for flexibility in product testing and preservatiom, which allows for various, diverse uses. Could be for both industrial or average consumer usage.
