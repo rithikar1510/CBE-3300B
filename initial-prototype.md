@@ -15,18 +15,22 @@ title: Initial Prototype
     </p>
     <h3 class="text-secondary">I2C Connections and Wiring</h3> 
     <p>
-      I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: 
+      I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: </p>
 
 | Adafruit Trinket Pin | Adafruit SHT31d 2 |
+
 |----------------------|-------------------|
+
 | Trinket M0 Pin 0 | SHT31 SDA | 
+
 | Trinket M0 Pin 2 | SHT31 SCL | 
+
 | Trinket M0 Gnd | SHT31 GND | 
+
 | Trinket M0 3V | SHT31 Vin | 
 
 <img width="1024" height="369" alt="image" src="https://github.com/user-attachments/assets/bcfa3530-957d-40df-a984-a5bf0084884c" />
 
-  </p>
     <h3 class="text-secondary">Trinket Libraries</h3> <p>
       The Adafruit Trinket M0 requires specific libraries to be used with the SHT31d. Four libraries must be imported first: board, time, adafruit_sht31d, and busio.       
       The board library is what maps the physical pins to their digital identifiers (i.e. board.D0, board.D1, etc) which is necessary to communicate which pins are connected to which inputs to print results and manipulate them.      
@@ -39,9 +43,9 @@ title: Initial Prototype
     Coding the controller is done using Mu, which uses Circuit Python (an abridged version of Python) to control the Trinket M0. The code below prints the humidty and temperature of the environment around the SHT31d. 
   </p>
 
-  ```python
-  import board
-  import busio
+```python
+import board
+import busio
 import adafruit_sht31d
 import time
 
@@ -53,7 +57,7 @@ while True:
     print("Humidity:", sensor.relative_humidity)
     print("-----")
     time.sleep(2)
-  ```
+```
   <h2 class="text-secondary">Checkpoint 3/5/2026</h2> 
   <p>
     The goal of this checkpoint was to drive the airpumps (each 4.5V) using a reading from the humidity sensor, but given that the maximum voltage the Trinket M0 can handle is 3V, it was difficult to turn the pumps on in any meaningful way. Each using a 2N222 transistor, the controller could not switch the air pumps on and off without the transistor heating up significantly. Instead, we chose to use an LED as an analog to the airpumps, hoping to use PWM to modulate the LED's output from dim to very bright depending on the reading of the SHT31d. In this checkpoint, we got the PWM to work with the LED based off a reading from the humidity sensor. In this setup, based off the reading from the sensor, the LED (red) switches to BRIGHT or DIM, corresponding to different duty cycle (BRIGHT = 65535, the max val, DIM = 3768 (arbitrary small value)). 
