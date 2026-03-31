@@ -20,6 +20,7 @@
       <a href="#about" class="btn btn-outline-light m-2">About</a>
       <a href="#preliminary design report" class="btn btn-outline-light m-2">Preliminary Design Report</a>
       <a href="#initial design report" class="btn btn-outline-light m-2">Initial Design Report</a>
+      <a href="#initial prototype" class="btn btn-outline-light m-2">Initial Prototype</a>
       <a href="#gantt" class="btn btn-outline-light m-2">GANTT Schedule</a>
     </nav>
   </header>
@@ -198,6 +199,13 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 <img width="1118" height="628" alt="image" src="https://github.com/user-attachments/assets/d982f4b4-1707-4d95-b286-eda12781a12c" />
 
 </p>
+
+  <!-- Initial Prototype Section -->
+  <section id="about" class="container py-5">
+    <h2 class="text-primary">Initial Prototype</h2>
+    <p>
+      This section goes over the various checkpoints and updates as the initial prototype is being designed. 
+    </p>
 
   <!-- GANTT Schedule Section -->
   <section id="gantt" class="container py-5">
