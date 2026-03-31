@@ -210,7 +210,8 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
     <p>
       Today, readings from the humidity sensor were able to printed to the serial output. This is done using the I2C connection between the humidity sensor (Adafruit     SHT31d) and the microcontroller (Adafruit Trinket M0). 
     </p>
-    <h3 class="text-secondary">I2C Connections and Wiring</h2> <p>
+    <h3 class="text-secondary">I2C Connections and Wiring</h3> 
+    <p>
       I2C connections are an electrical connection method that uses bidirectional information flow for the sensor and the processor. The two wires are the serial data line (SDA) and the serial clock line (SCL), which are labelled on the SHT31d. In an I2C connection, one device is the "master" (here, the Trinket M0) and the other device is the "slave" (SHT31d), where the master sends requests for data or action, while the slave only responds or operates when ordered to do so. The SHT31D is an I2C type sensor and has SCL and SDA pins, and the Trinket M0 is also I2C compatible. See the [pinout](https://learn.adafruit.com/adafruit-trinket-m0-circuitpython-arduino/pinouts?gad_source=1&gad_campaignid=21079267614&gbraid=0AAAAADx9JvSdZxQ4pdjQeP3j92_3XTvmM&gclid=EAIaIQobChMI1tiM06fKkwMVTlRHAR21fiXZEAAYASAAEgIqL_D_BwE) at learn.adafruit. The only SCL compatible pin on the Trinket M0 is D2/A1 (labelled 2 on the Trinket) and the SDA compatible pin is D0/A2 (labelled 0 on the Trinket). This leads to the below connections: 
 
 | Adafruit Trinket Pin | Adafruit SHT31d 2 |
@@ -221,7 +222,7 @@ In the market, there is a gap for very small, budget climatic test chambers, esp
 | Trinket M0 3V | SHT31 Vin | 
 
   </p>
-    <h3 class="text-secondary">Trinket Libraries</h2> <p>
+    <h3 class="text-secondary">Trinket Libraries</h3> <p>
       The Adafruit Trinket M0 requires specific libraries to be used with the SHT31d. Four libraries must be imported first: board, time, adafruit_sht31d, and busio. The board library is what maps the physical pins to their digital identifiers (i.e. board.D0, board.D1, etc) which is necessary to communicate which pins are connected to which inputs to print results and manipulate them. The time library is necessary for I2C connections as they permit connection with the SCL line. Similarly, the busio library allows connection with the SDA line. 
     </p>
 
