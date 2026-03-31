@@ -1,3 +1,8 @@
+---
+layout: default
+title: Initial Prototype
+---
+
 <!-- Initial Prototype Section -->
   <section id="about" class="container py-5">
     <h2 class="text-primary">Initial Prototype</h2>
