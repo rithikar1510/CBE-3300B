@@ -11,7 +11,7 @@ This section goes over the various checkpoints and updates as the initial protot
 
 Today the goal was to implement a PWM algorithm to modulate the air pumps more than simple off and on. 
 
-## Attempting PWM Control
+### Attempting PWM Control
 
 This code was intended to be able to see if half power could be achieved with a pump. Here the pump turns on at full power, turns off, then turns on for half power before turning back off. 
 
@@ -47,7 +47,7 @@ while True:
     time.sleep(1)
 ```
 
-## Using PWM Control for Narrower Uncertainty
+### Using PWM Control for Narrower Uncertainty
 
 The goal here was to make the pump turn to half power if the humidity is less than 2% away from the intended threshold. For example, in the below code, the HIGH_THRESHOLD was set to 55% and LOW_THRESHOLD was set to 50%. 
 What this means for the control is that if the RH is significantly below the intended range (i.e. 50-55%), then the desicator air pump (D4) turns on at full power. But if the difference between the ideal range and the
