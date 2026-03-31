@@ -72,7 +72,9 @@ The humidity sensor is then connected to the controller. There the Vin on the se
 This circuit is then connected to a laptop via USB-A to micro-USB (like before) and the controller has the following code. The 36.0 threshold was ENTIRELY arbitrary and used for the sake of testing to make sure the LED switched from BRIGHT to DIM. Pick whatever threshold you want. 
   </p>
   <h3 class="text-secondary">Connections</h3> <p>
-The following import statements must be included:   </p>
+The following import statements must be included: import board, import pwmio, import time, import busio, import adafruit_sht31d  </p>
+
+  <h3 class="text-secondary">Code</h3> 
 
 ```python
 import board
@@ -80,6 +82,128 @@ import pwmio
 import time
 import busio
 import adafruit_sht31d
+
+
+# LED setup (PWM via transistor)
+led = pwmio.PWMOut(board.D4, frequency=5000, duty_cycle=0)
+
+# SHT31 setup (I2C)
+i2c = busio.I2C(board.D2, board.D0)  # SCL, SDA
+sht = adafruit_sht31d.SHT31D(i2c)
+
+print("Starting humidity/LED test")
+
+# Threshold for dim/bright
+threshold = 36.0
+
+# Brightness levels
+BRIGHT = 65535   # Full brightness
+DIM = 3768      # Half brightness (or adjust as needed)
+
+while True:
+    # Read humidity
+    hum = sht.relative_humidity
+    temp = sht.temperature
+    print(f"Temp: {temp:.1f} C  Humidity: {hum:.1f}%")
+
+    # Set LED brightness based on threshold
+    if hum > threshold:
+        led.duty_cycle = DIM   # Dim if above 36%
+        print("LED DIM")
+    else:
+        led.duty_cycle = BRIGHT  # Bright if below 36%
+        print("LED BRIGHT")
+    
+    time.sleep(2)
 ```
 
+<h2 class="text-secondary">Checkpoint 3/24/2026</h2> <p>
+  Due to the lower voltage from the Trinket M0, 2 MOSFETs (Adafruit MOSFET Driver - For Motors, Solenoids, LEDs, etc - STEMMA JST PH 2mm) were purchased. Two MOSFET's are necessary because there are two pumps, and each pump requires its own MOSFET so that the lower voltage from the Trinket M0 can be used to modulate these higher voltage motors. In tihs setup, a common power source (4 1.5V batteries - i.e. 4 AA batteries) were used to power the MOSFETs. GRD was supplied by the Trinket M0 (GRD pin) and it is important that the negative terminal of the batteries, GRD of the MOSFETS, and GRD of the SHT31d are all common grounds. This was just on-off control; no PWM was used yet.
+</p>
+  <h3 class="text-secondary">Preliminary Motor Testing</h3> <p>
+    The purpose of this was to see if the air pumps could be driven at all with the MOSFETs and to check that all parts worked. 
+  </p>
+    <h4 class="text-secondary">Connections</h4> <p>
+      Connect the battery to the MOSFETS (MOSFETS have a + and - labelled for the motor wires. Plug in + of battery to + of MOSFET and - of battery to - of MOSFET. One battery (4 1.5 V batteries) is enough for both MOSFETS. Then connect GRD of MOSFET (using 3 wires or the pins) to common GRD with Trinket M0 and SHT31d, Vin to + battery, and the In pin/wire to D3 and D4 (3 and 4) on the Trinket M0. For preliminary test of motors, where they'll alternate for 2 sec apiece: 
+</p>
 
+```python
+import board
+import digitalio
+import time
+
+motor1 = digitalio.DigitalInOut(board.D3)
+motor1.direction = digitalio.Direction.OUTPUT
+
+motor2 = digitalio.DigitalInOut(board.D4)
+motor2.direction = digitalio.Direction.OUTPUT
+
+while True:
+    print("Motor 1 ON")
+    motor1.value = True
+    motor2.value = False
+    time.sleep(3)
+    print("Motor 2 ON")
+    motor1.value = False
+    motor2.value = True
+    time.sleep(3)
+```
+  <h3 class="text-secondary">Air Pumps with SHT31d Testing</h3> <p>
+    Here, after checking that the air pumps could be driven, do the usual connection of SHT31d to the Trinket M0 (see above for wiring). Run the following code. As humidity is above 40, one motor turns on. As humidity is below 20, the other motor turns on. These thresholds were arbitrary and chosen to reflect the idea that a range of values could be set as the set point (with range being the range of uncertainty), and the air pumps turn off and on to achieve this range. Here, it could be said that the set point is 30% RH, with an uncertainty of +/- of 10%. 
+  </p>
+
+  <h4 class="text-secondary">Code</h4> <p>
+
+  ```python
+import board
+import busio
+import digitalio
+import time
+import adafruit_sht31d
+
+# I2C setup
+i2c = busio.I2C(board.SCL, board.SDA)
+sensor = adafruit_sht31d.SHT31D(i2c)
+
+# Pumps
+pump_high = digitalio.DigitalInOut(board.D3)  # humid → pump 1
+pump_low = digitalio.DigitalInOut(board.D4)   # dry → pump 2
+
+pump_high.direction = digitalio.Direction.OUTPUT
+pump_low.direction = digitalio.Direction.OUTPUT
+
+# Thresholds (adjust these!)
+HIGH_THRESHOLD = 40  # % humidity
+LOW_THRESHOLD = 20   # % humidity
+
+while True:
+    humidity = sensor.relative_humidity
+    print("Humidity:", humidity)
+
+    if humidity is not None:
+        if humidity > HIGH_THRESHOLD:
+            # Too humid → run pump 1
+            pump_high.value = True
+            pump_low.value = False
+
+        elif humidity < LOW_THRESHOLD:
+            # Too dry → run pump 2
+            pump_high.value = False
+            pump_low.value = True
+
+        else:
+            # In between → both off
+            pump_high.value = False
+            pump_low.value = False
+
+    time.sleep(2)
+```
+
+<h2 class="text-secondary">Initial Prototype Presentation 3/26/2026</h2> <p>
+  Prototype was demonstrated well! airpumps were connected to the appropriate tubing (whichever air pump turned on when RH > HIGH_THRESHOLD was connected to the tube with desicator beads and the other to a container with water at room temperature). Air pumps modulated correctly, but there was splatter through the tubing connected to the water-filled tube. 
+
+  Next steps: 
+  - Move tubing such that splatter can be avoided. Maybe connected the tube to the top of the tube instead of the side will prevent liquid from entering the tube. Mesh could also be added between the liquid level and the tubing's entrance to prevent splatter.
+  - Connections should be soldered, with thought to where components will be. The two MOSFETs should be on the same breadboard, with the humidity sensor attached via the four wires (GRD, Vin, SCL, SDA) through small holes in the container. The Trinket M0 should be attached to the same breadboard as the MOSFETs. This is so that there can be a common ground.
+  - PWM should be tried for more precise control (or PID, etc)
+</p>
