@@ -105,4 +105,9 @@ while humidity != None:
     time.sleep(2)
 ```
 
+## Checkpoint 4/2/2026
+
+### Hardware
+
+SDA - white, SCL - orange
 
