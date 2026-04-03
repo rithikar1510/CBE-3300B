@@ -3,7 +3,7 @@ layout: default
 title: Second Prototype
 ---
 
-# Second Prototype Prototype
+# Second Prototype
 
 This section goes over the various checkpoints and updates as the initial prototype is being updated for the second demonstration. 
 
