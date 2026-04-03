@@ -3,7 +3,7 @@ layout: default
 title: Initial Prototype
 ---
 
-## Initial Prototype
+# Initial Prototype
 
 This section goes over the various checkpoints and updates as the initial prototype is being designed. 
 
