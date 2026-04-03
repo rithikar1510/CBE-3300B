@@ -4,7 +4,7 @@ title: Preliminary Design Report
 ---
 # Preliminary Design Report
 
-# Project: 
+## Project: 
 
 Humidity chambers are specialized, controlled environments in which a specific relative humidity (RH) value is set. These devices can be used for product quality assurance, testing material durability, and evaluating shelf-life by simulating specific environments to test aging, moisture ingress, or environmental stress. It can also be used in agriculture for grow-chambers and seed germination. 
 
@@ -12,7 +12,7 @@ In this project the humidity of a chamber is controlled to various set points. U
 
 <img width="958" height="674" alt="image" src="https://github.com/user-attachments/assets/4c2dd152-7333-41a0-9a31-7b6c79f1536a" />
 
-# Premise: 
+## Premise: 
 
 ### Physical/Chemical Principles:
 
@@ -22,11 +22,11 @@ The RH of the chamber is controlled by air streams from two air pumps. Two strea
 
 There are no reactions in this device. There are no corrosive materials either. 
 
-### Calculations
+## Calculations
 
 There are no calculations necessary. We will be using a PID algorithm and the humidity sensor automatically calculates the RH. 
 
-#### Summary:
+## Summary:
 The Arduino acts as the central controller for the system and provides power and control signals to the circuit. All components share a common ground so they can communicate properly. A humidity sensor inside the chamber continuously measures the relative humidity and sends this information to the Arduino. The desired humidity level is set using a potentiometer, which the Arduino reads as an input. Since the air pumps require more power than the Arduino can supply directly, they are controlled using transistor switch circuits that allow the Arduino to safely turn the pumps on and off. Diodes are included across the pumps to protect the circuit when the pumps are switched off. An LED is used as a simple visual indicator to show when the system is operating. Together, these components allow the system to monitor and adjust humidity in the chamber in a controlled and reliable way.
 
 ### Prototyping Approach
@@ -68,7 +68,7 @@ An LED is placed on the breadboard:
 - Resistor → LED long leg (anode)
 - LED short leg (cathode) → ground rail
 
-# Components: 
+## Components: 
 
 _Mechanical_
 - Chamber (32oz: https://tinyurl.com/cbe3300container32oz, square container: https://tinyurl.com/othercontainer)
