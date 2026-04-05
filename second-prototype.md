@@ -215,7 +215,7 @@ while True:
         if humidity > HIGH_THRESHOLD:
             pump2.duty_cycle = OFF
             perc_difference = (humidity - HIGH_THRESHOLD)/3
-            power_val = perc_difference * FULL 
+            power_val = int(perc_difference * FULL)
             if (humidity - HIGH_THRESHOLD) < 3:
                 pump1.duty_cycle = power_val
             else:
@@ -223,7 +223,7 @@ while True:
         elif humidity < LOW_THRESHOLD:
             pump1.duty_cycle = OFF
             perc_difference = (LOW_THRESHOLD - humidity)/3 
-            power_val = perc_difference * FULL 
+            power_val = int(perc_difference * FULL)
             if (LOW_THRESHOLD - humidity) < 3:
                 pump2.duty_cycle = power_val
             else:
