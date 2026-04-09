@@ -21,7 +21,7 @@
       <a href="preliminary-design-report.html" class="btn btn-outline-light m-2">Preliminary Design Report</a>
       <a href="initial-design-report.html" class="btn btn-outline-light m-2">Initial Design Report</a>
       <a href="initial-prototype.html" class="btn btn-outline-light m-2"> Initial Prototype</a>      
-      <a href="second-prototype.html" class="btn btn-outline-light m-2"> Second Prototype</a>      
+      <a href="second-prototype.html" class="btn btn-outline-light m-2"> Intermediate Prototype</a>      
       <a href="#gantt" class="btn btn-outline-light m-2">GANTT Schedule</a>
     </nav>
   </header>
