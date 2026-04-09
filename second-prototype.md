@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Second Prototype
+title: Intermediate Prototype
 ---
 
-# Second Prototype
+# Intermediate Prototype
 
 This section goes over the various checkpoints and updates as the initial prototype is being updated for the second demonstration. 
 
