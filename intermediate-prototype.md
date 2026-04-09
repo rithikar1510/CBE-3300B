@@ -236,3 +236,14 @@ while True:
 ```
 
 Trying this code for the next time. We also, upon trying to connect to the display, realized that installing the package required (adafruit_ssd1306) for the display required too much RAM for the Trinket M0. Instead, we are going to try and connect the SHT31d to another Trinket M0 as well (i.e. include the other address for the SHT31d and have it connect to 2 controllers) and connect that controller to the display. This means that we would have to split the signal from the SHT31d; unsure as to whether this will work. As a backup, a Feather has been ordered (because it has much higher RAM) to try and connect to the display. 
+
+## Intermediate Prototype Presentation Data (4/9/2026)
+
+The device broke down (sort of) at the nth hour. For some reason, the dry air line is always reading a signal from the Trinket (the sig light for that pump is always on even when the other MOSFET's sig light turns off), and regardless of what the code is setting the duty cycle to, the dry air line is always at FULL. 
+
+Next steps: 
+- Talk about CBE principles
+- Get calibration data (RH vs time for various set points)
+- Potentiometer/switch
+- Display
+- Talk about reasoning for decisions 
