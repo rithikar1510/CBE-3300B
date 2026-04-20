@@ -8,8 +8,8 @@ The operation of the ClimaPod humidity control system is based on several fundam
 
 4. System performance depends on the controlled mixing of two air streams: a humidified stream and a dried stream. By adjusting the relative flow rates of these streams, the overall moisture content of the inlet air can be tuned. This ratio directly determines the resulting humidity inside the chamber, making flow control the key mechanism for regulation.
   
-5. The system operates using a closed-loop feedback control strategy based on relative humidity measurements. The controller continuously compares the measured humidity to the desired setpoint and adjusts the air pump output accordingly.
-
-As the system approaches the setpoint, the controller reduces the power supplied to the pumps, resulting in lower airflow rates. This gradual reduction prevents overshooting and allows for stable convergence to the desired humidity. Conversely, when the system is far from the setpoint, higher pump power is applied to increase the rate of humidification or dehumidification.
-
-This behavior is characteristic of proportional control, where the control action is scaled based on the magnitude of the error between the measured value and the setpoint. By modulating the relative flow rates of the humidified and dry air streams, the system achieves smooth and stable regulation of the chamber environment.
+  5. The system operates using a closed-loop feedback control strategy based on relative humidity measurements. The controller continuously compares the measured humidity to the desired setpoint and adjusts the air pump output accordingly.
+  
+  As the system approaches the setpoint, the controller reduces the power supplied to the pumps, resulting in lower airflow rates. This gradual reduction prevents overshooting and allows for stable convergence to the desired humidity. Conversely, when the system is far from the setpoint, higher pump power is applied to increase the rate of humidification or dehumidification.
+  
+  This behavior is characteristic of proportional control, where the control action is scaled based on the magnitude of the error between the measured value and the setpoint. By modulating the relative flow rates of the humidified and dry air streams, the system achieves smooth and stable regulation of the chamber environment.
