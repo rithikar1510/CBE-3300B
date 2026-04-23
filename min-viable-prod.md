@@ -155,6 +155,10 @@ while True:
 
 ```
 
+<img width="1179" height="1450" alt="labelled setup" src="https://github.com/user-attachments/assets/3e52680e-e749-40ec-a69c-e30d13eb520c" />
+
+<img width="1179" height="1450" alt="IMG_2885" src="https://github.com/user-attachments/assets/659d74c4-fce9-485b-9209-5fc1778cecb8" />
+
 ## Checkpoint 4/23/26
 
 This is the final version of the code: 
@@ -218,28 +222,24 @@ while True:
     if humidity is not None:
         if humidity > HIGH_THRESHOLD:
             pump2.duty_cycle = OFF
-            perc_difference = (humidity - HIGH_THRESHOLD)/3
+            perc_difference = (humidity - HIGH_THRESHOLD)/4
             power_val = int(perc_difference * FULL)
-            if (humidity - HIGH_THRESHOLD) < 3:
+            if (humidity - HIGH_THRESHOLD) < 4:
                 if power_val < MIN_VAL: 
                     pump1.duty_cycle = MIN_VAL
-                    print(pump1.duty_cycle)
                 else: 
                     pump1.duty_cycle = power_val
-                    print(pump1.duty_cycle)
             else:
                 pump1.duty_cycle = FULL
         elif humidity < LOW_THRESHOLD:
             pump1.duty_cycle = OFF
-            perc_difference = (LOW_THRESHOLD - humidity)/3 
+            perc_difference = (LOW_THRESHOLD - humidity)/4
             power_val = int(perc_difference * FULL)
-            if (LOW_THRESHOLD - humidity) < 3:
+            if (LOW_THRESHOLD - humidity) < 4:
                 if power_val < MIN_VAL: 
                     pump2.duty_cycle = MIN_VAL
-                    print(pump2.duty_cycle)
                 else: 
                     pump2.duty_cycle = power_val
-                    print(pump2.duty_cycle)
             else:
                 pump2.duty_cycle = FULL
         else:
@@ -247,9 +247,3 @@ while True:
             pump2.duty_cycle = OFF
     time.sleep(1)
 ```
-
-<img width="1179" height="1450" alt="labelled setup" src="https://github.com/user-attachments/assets/3e52680e-e749-40ec-a69c-e30d13eb520c" />
-
-<img width="1179" height="1450" alt="IMG_2885" src="https://github.com/user-attachments/assets/659d74c4-fce9-485b-9209-5fc1778cecb8" />
-
-
