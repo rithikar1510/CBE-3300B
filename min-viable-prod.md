@@ -155,6 +155,99 @@ while True:
 
 ```
 
+## Checkpoint 4/23/26
+
+This is the final version of the code: 
+
+```python
+import time
+import board
+import busio
+import adafruit_ssd1306
+import adafruit_sht31d
+from analogio import AnalogIn
+import pwmio
+
+# I2C setup
+i2c = busio.I2C(board.SCL, board.SDA)
+
+#potentiometer for set point adjustment
+pot = AnalogIn(board.A3)
+
+# Sensor
+sht31 = adafruit_sht31d.SHT31D(i2c)
+
+#humid pump
+pump1 = pwmio.PWMOut(board.D5, frequency=1000, duty_cycle=0)  # HUMID
+
+#dry pump
+pump2 = pwmio.PWMOut(board.D4, frequency=1000, duty_cycle=0)  # DRY
+
+# OLED (explicit address iis 0x3D)
+display = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c, addr=0x3D)
+
+OFF = 0
+MIN_VAL = 17500
+FULL = 65535
+
+humidity = sht31.relative_humidity
+
+while True:
+    SET_POINT = 100 * (pot.value/65535)
+    humidity = sht31.relative_humidity
+    HIGH_THRESHOLD = SET_POINT + 0.5
+    LOW_THRESHOLD = SET_POINT - 0.5
+
+    display.fill(0)
+    display.show()
+    display.text("Humidity:", 0, 5, 1)
+    
+    print("this is set", SET_POINT)
+    print(humidity)
+
+    if humidity is not None:
+        display.text("{:.1f}%".format(humidity), 0, 20, 1)
+    else:
+        display.text("Sensor error", 0, 20, 1)
+
+    display.text("Set point:", 0, 35, 1)
+    display.text("{:.1f}%".format(SET_POINT), 0, 50, 1)
+    display.show()
+
+    # Control logic
+    if humidity is not None:
+        if humidity > HIGH_THRESHOLD:
+            pump2.duty_cycle = OFF
+            perc_difference = (humidity - HIGH_THRESHOLD)/3
+            power_val = int(perc_difference * FULL)
+            if (humidity - HIGH_THRESHOLD) < 3:
+                if power_val < MIN_VAL: 
+                    pump1.duty_cycle = MIN_VAL
+                    print(pump1.duty_cycle)
+                else: 
+                    pump1.duty_cycle = power_val
+                    print(pump1.duty_cycle)
+            else:
+                pump1.duty_cycle = FULL
+        elif humidity < LOW_THRESHOLD:
+            pump1.duty_cycle = OFF
+            perc_difference = (LOW_THRESHOLD - humidity)/3 
+            power_val = int(perc_difference * FULL)
+            if (LOW_THRESHOLD - humidity) < 3:
+                if power_val < MIN_VAL: 
+                    pump2.duty_cycle = MIN_VAL
+                    print(pump2.duty_cycle)
+                else: 
+                    pump2.duty_cycle = power_val
+                    print(pump2.duty_cycle)
+            else:
+                pump2.duty_cycle = FULL
+        else:
+            pump1.duty_cycle = OFF
+            pump2.duty_cycle = OFF
+    time.sleep(1)
+```
+
 <img width="1179" height="1450" alt="labelled setup" src="https://github.com/user-attachments/assets/3e52680e-e749-40ec-a69c-e30d13eb520c" />
 
 <img width="1179" height="1450" alt="IMG_2885" src="https://github.com/user-attachments/assets/659d74c4-fce9-485b-9209-5fc1778cecb8" />
