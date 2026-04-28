@@ -163,7 +163,9 @@ while True:
 
 ### Power Sourcing and Troubleshooting
 
-After the end of last class, the goal was to decouple from the laptop and decouple everything. Today, we soldered everything on, but everything but the display worked. It would flash on for a moment and then turn off when the pumps were stil turned on. We tried commenting out the code that switched pumps on and off, and left everything else the same, and the entire device worked minus modulation of the pumps. This means the pumps being on was inhibiting the display function, indicating some sort of power sag/source issue. It had to be something rather than a control/wiring issue. To this, we had also switched to using a plug-in adapter that we had cut into to solder wires on. We were able to identify which wire of the adapter was ground and which was power, and accordingly were able to solder it onto the breadboard. However, we noticed that though the plug was rated for 5V, the max current was only 1 A. The pumps can draw up to a max of 500 mA each, and we assumed that the pumps, at least at the start, were drawing 500 mA and maxing out the current from the adapter. To this, we found a 2A, 5V adapter, which once soldered onto the breadboard worked. 
+After the end of last class, the goal was to decouple from the laptop and decouple everything. Today, we soldered everything on, but everything but the display worked. It would flash on for a moment and then turn off when the pumps were stil turned on. We tried commenting out the code that switched pumps on and off, and left everything else the same, and the entire device worked minus modulation of the pumps. This means the pumps being on was inhibiting the display function, indicating some sort of power sag/source issue, not a control/wiring issue. 
+
+When soldering, we had switched from a battery power source to a plug in adapter that we had cut into. To find the ground vs the power wire in the adapter, we used a multimeter, and then soldered into the common ground/Vin rails of the breadboard respectively. However, we noticed that though the plug was rated for 5V, the max current was only 1 A. The pumps can draw up to 500 mA each, and we assumed that the pumps, at least at the start, were drawing 500 mA and maxing out the current from the adapter and leaving nothing for the potentiometer to work. To fix this, we found a 2A, 5V plug-in power source, which once soldered onto the breadboard worked due to its higher current capacity. All pieces of the device are working! 
 
 ### Code
 
@@ -253,6 +255,12 @@ while True:
             pump2.duty_cycle = OFF
     time.sleep(1)
 ```
+
+To find the threshold limit of 4%, we created various calibration curves and attempted to minimize the deviations from the set point. We decided on 4% as the optimal variation, but its possible that further tuning could be carried out here. The calibration curves are shown below. The time needed to reach +/- 4.5% deviation from the set point is around 25 seconds in both directions when initially around 50% from the set point.
+
+<img width="889" height="547" alt="image" src="https://github.com/user-attachments/assets/69a3e6ec-9a8a-43a5-bec6-80e5c5269255" />
+
+<img width="890" height="540" alt="image" src="https://github.com/user-attachments/assets/efbf8173-c146-4824-b039-039f18bdaf87" />
 
 ### Hardware
 
