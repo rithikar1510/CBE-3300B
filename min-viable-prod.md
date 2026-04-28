@@ -258,7 +258,7 @@ while True:
 
 To find the threshold limit of 4%, we created various calibration curves and attempted to minimize the deviations from the set point. We decided on 4% as the optimal variation, but its possible that further tuning could be carried out here. The calibration curves are shown below. The time needed to reach +/- 4.5% deviation from the set point is around 25 seconds in both directions when initially around 50% from the set point.
 
-<img width="889" height="547" alt="image" src="https://github.com/user-attachments/assets/69a3e6ec-9a8a-43a5-bec6-80e5c5269255" />
+<img width="878" height="541" alt="image" src="https://github.com/user-attachments/assets/f0909989-9dad-4517-a77d-75ea2143823c" />
 
 <img width="889" height="542" alt="image" src="https://github.com/user-attachments/assets/27483578-9abd-4526-9a87-b523499443b8" />
 
