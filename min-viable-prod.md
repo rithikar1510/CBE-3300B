@@ -260,7 +260,7 @@ To find the threshold limit of 4%, we created various calibration curves and att
 
 <img width="889" height="547" alt="image" src="https://github.com/user-attachments/assets/69a3e6ec-9a8a-43a5-bec6-80e5c5269255" />
 
-<img width="890" height="540" alt="image" src="https://github.com/user-attachments/assets/efbf8173-c146-4824-b039-039f18bdaf87" />
+<img width="889" height="542" alt="image" src="https://github.com/user-attachments/assets/27483578-9abd-4526-9a87-b523499443b8" />
 
 ### Hardware
 
