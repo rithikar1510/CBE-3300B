@@ -161,7 +161,13 @@ while True:
 
 ## Checkpoint 4/23/26
 
-This is the final version of the code: 
+### Power Sourcing and Troubleshooting
+
+After the end of last class, the goal was to decouple from the laptop and decouple everything. Today, we soldered everything on, but everything but the display worked. It would flash on for a moment and then turn off when the pumps were stil turned on. We tried commenting out the code, and left everything else the same, and it worked. This indicated that the issue was some sort of power sag issue or something rather than a control/wiring issue. To this, we had also switched to using a plug-in adapter that we had cut into to solder wires on. We were able to identify which wire of the adapter was ground and which was power, and accordingly were able to solder it onto the breadboard. However, we noticed that though the plug was rated for 5V, the max current was only 1 A. The pumps can draw up to a max of 500 mA each, and we assumed that the pumps, at least at the start, were drawing 500 mA and maxing out the current from the adapter. To this, we found a 2A, 5V adapter, which once soldered onto the breadboard worked. 
+
+### Code
+
+This is the final version of the code. Here, like explained in the last checkpoint, proportional control modulates the speed of each pump to prevent overshoot. The range at which proportional control switches on is +/- 4% RH; if the measured RH is more than 4% away from the set point, the pump simply operations at full power.
 
 ```python
 import time
@@ -247,3 +253,19 @@ while True:
             pump2.duty_cycle = OFF
     time.sleep(1)
 ```
+
+### Hardware
+
+We decided to encapsulate all of our parts in a 3D printed box. The box was designed with a lid with holes in for the dry and humid lines, as well as a hole at the bottom through which wiring for the power source and the humidity sensor runs through. We also drilled holes in the top of the box for connections to the display and the potentiometer. This makes the display easily visible and the potentiometer easily accessible to modulate the set point. We also wrapped the air pumps in bubble wrap to reduce noise and also hopefully prevent damage to either the breadboard or causing loose wires/piping. The flasks with the dessicator beads and water were ensured to be very tightly closed and when the box is closed are ensured to be upright to both prevent the beads/water from entering the pipe and from spilling in the box. Pictures of the finished device are included below. 
+
+<img width="530" height="542" alt="image" src="https://github.com/user-attachments/assets/cad0c7b7-e9c5-4d51-90e9-3497bc46ed03" />
+
+<img width="535" height="675" alt="image" src="https://github.com/user-attachments/assets/19893fc4-d056-4f36-b85b-61ccc3972fb3" />
+
+<img width="557" height="737" alt="image" src="https://github.com/user-attachments/assets/9a728ba0-7a0b-49cc-afa4-8cfffe045a32" />
+
+<img width="721" height="868" alt="image" src="https://github.com/user-attachments/assets/a3b65f95-0456-4a3d-9369-a90d8bc072f4" />
+
+
+
+
