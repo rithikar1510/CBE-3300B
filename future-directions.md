@@ -31,5 +31,3 @@ requiring change of the control logic.
 
 ## Display Size
 The current display used is 128x128 pixels. It is quite small to see. Using a bigger display would make the device more user friendly. Furthermore, it would be helpful to more explicitly map the set points to changing the slde on the 10k potentiometer. Both of these changes would make the user interface must more clear. 
-
-Use bigger display and include switch for user friendliness
