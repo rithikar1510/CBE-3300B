@@ -1,136 +1,150 @@
-/* Reset & Base */
+/* =========================
+   1. Base Theme (Cayman-like)
+   ========================= */
+
 body {
   margin: 0;
-  padding: 0;
-  display: flex;
-  background: #f0f4f8;
-  font-family: Georgia, serif;
-  color: #001f3f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2d3d;
 }
 
-/* Left Navigation */
-nav.toc {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
-  background: #001f3f;
-  padding: 1em;
-  box-shadow: 2px 0 4px rgba(0,0,0,0.1);
-  overflow-y: auto;
-}
-
-nav.toc ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav.toc li {
-  margin: 0.5em 0;
-}
-
-nav.toc a {
-  display: block;
-  padding: 0.5em 1em;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 4px;
-  transition: background 0.2s;
-}
-
-nav.toc a:hover {
-  background: #003366;
-}
-
-/* Main Content */
-main {
-  flex: 1;
-  margin-left: 200px;
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-}
-
-.container {
-  width: 100%;
-  max-width: 800px;
-  background: white;
-  padding: 1em;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Typography */
-h1 {
-  text-align: center;
-  font-size: 2.2em;
-  color: #001f3f;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 1.75em;
-  margin-top: 1.5em;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.2em;
-  color: #001f3f;
-}
-
-h3 {
-  font-size: 1.3em;
-  margin-top: 1em;
-  color: #001f3f;
-}
-
-p, ul {
-  line-height: 1.6;
-  margin-bottom: 1em;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
+/* Links */
 a {
-  color: #001f3f;
+  color: #0366d6;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
+/* =========================
+   2. Layout (Your Sidebar)
+   ========================= */
+
+body {
+  display: flex;
+}
+
+/* Sidebar */
+nav.toc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #24292e;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+nav.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.toc li {
+  margin: 0.4rem 0;
+}
+
+nav.toc a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #ffffff;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+nav.toc a:hover {
+  background: #0366d6;
+}
+
+/* Main content area */
+main {
+  margin-left: 220px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   3. Typography (Cayman feel)
+   ========================= */
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #24292e;
+}
+
+h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e1e4e8;
+  color: #24292e;
+}
+
+h3 {
+  color: #24292e;
+}
+
+p, ul {
+  line-height: 1.7;
+}
+
+/* =========================
+   4. Buttons (modern Cayman-style)
+   ========================= */
+
 .button-link {
   display: inline-block;
-  background: #001f3f;
+  background: #0366d6;
   color: white;
-  padding: 0.5em 1em;
-  margin: 0.25em;
-  border-radius: 4px;
-  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin: 0.3rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
 }
 
 .button-link:hover {
-  background: #003366;
+  background: #024ea2;
   color: white;
 }
 
-/* Iframe */
+/* =========================
+   5. Media
+   ========================= */
+
 iframe {
   width: 100%;
   height: 500px;
-  border: 1px solid #ccc;
-  margin-top: 1em;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
-/* Footer */
+/* =========================
+   6. Footer
+   ========================= */
+
 footer {
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 2em;
-  border-top: 1px solid #ddd;
-  padding-top: 1em;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #6a737d;
 }
