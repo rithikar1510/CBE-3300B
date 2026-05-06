@@ -63,7 +63,7 @@
 
     .container {
       width: 95%;
-      max-width: 2400px;
+      max-width: 4400px;
       background: white;
       padding: 2em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
