@@ -63,8 +63,8 @@
     }
 
     .container {
-      width: 80%;
-      max-width: 1000px;
+      width: 90%;
+      max-width: 1400px;
       background: white;
       padding: 2em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
