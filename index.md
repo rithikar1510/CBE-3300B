@@ -56,15 +56,15 @@
     /* Main Content */
     main {
       flex: 1;
-      margin-left: 220px;
+      margin-left: 200px;
       display: flex;
       justify-content: center;
       padding: 2em;
     }
 
     .container {
-      width: 90%;
-      max-width: 1400px;
+      width: 95%;
+      max-width: 2400px;
       background: white;
       padding: 2em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
