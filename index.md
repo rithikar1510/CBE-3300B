@@ -20,7 +20,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 220px;
+      width: 200px;
       height: 100vh;
       background: #001f3f;
       padding: 1em;
@@ -62,10 +62,10 @@
     }
 
     .container {
-      width: 95%;
-      max-width: 6400px;
+      width: 100%;
+      max-width: 8000px;
       background: white;
-      padding: 2em;
+      padding: 1em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
