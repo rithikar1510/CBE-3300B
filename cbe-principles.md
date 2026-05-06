@@ -9,6 +9,7 @@ Humid and dry air can be delivered through several distinct mechanisms: convecti
 **Diffusive transport** occurs when dry air is bubbled through a liquid. As the air bubbles rise, water vapor evaporates into them until the bubbles approach saturation, or 100% relative humidity. Once the bubbles reach the liquid surface, they burst, releasing vapor that mixes with the surrounding air above the liquid to create a humidified air stream. Relative humidity in this process is described by the ratio of the partial pressure of water vapor to the saturation vapor pressure at a given temperature.
 
 <img width="322" height="128" alt="image" src="https://github.com/user-attachments/assets/4ad52a8b-fb8e-42ec-b645-5ebd2bf2cba0" />​
+
 ​
 **Adsorption-based drying** uses desiccator beads, which contain many small hydrophilic pores. These pores attract and capture water molecules from the air stream. As air is pumped through the beads, water molecules adhere to the bead surfaces, effectively removing moisture and producing dry air. This process depends on the beads’ porous structure and their affinity for water, making adsorption an effective method for dehumidification.
 side the chamber and enables direct comparison to the desired setpoint.
