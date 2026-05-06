@@ -193,6 +193,9 @@
           <a href="initial-prototype.html" class="button-link">Initial Prototype</a>
           <a href="intermediate-prototype.html" class="button-link">Intermediate Prototype</a>
           <a href="min-viable-prod.html" class="button-link">Minimum Viable Product</a>
+          <a href="phys-device-design.html" class="button-link">Physical Device Design</a>
+          <a href="cbe-principles.html" class="button-link">Chemical Engineering Principles</a>
+          <a href="future-directions.html" class="button-link">Future Directions</a>
         </div>
       </section>
 
