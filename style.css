@@ -3,7 +3,7 @@
    ========================= */
 
 body {
-  margin: 220;
+  display: flex;
   font-family: 'Merriweather', serif;
   background: #f5f7fa;
   color: #1f2d3d;
@@ -105,6 +105,18 @@ p, ul {
   line-height: 1.7;
 }
 
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background: #1f2933;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+}
 /* =========================
    4. Buttons (modern Cayman-style)
    ========================= */
