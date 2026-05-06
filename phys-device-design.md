@@ -10,4 +10,4 @@ The setup is arranged to maintain consistent airflow while allowing easy refilli
 # 3D Printing
 We 3D printed the case and lid to hold all components together in a compact system. The design keeps the breadboard, pumps, water reservoir, desiccant reservoir, and tubing enclosed and organized, while still allowing access for adjustments.
 
-We adjusted the fit so everything sits securely without extra empty space, which helps keep the device compact. The lid was designed to fit tightly onto the chamber while still allowing easy access to add water or replace the desiccant beads. The enclosure of the box measures approximately 107 × 130 × 107 mm, with a 123 × 101 × 10 mm lid designed to fit securely onto the chamber.
+We adjusted the fit so everything sits securely without extra empty space, which helps keep the device compact. The lid was designed to fit tightly onto the case while still allowing easy access to add water or replace the desiccant beads. The case box measures approximately 107 × 130 × 105 mm, with a 101.4 × 124 × 10 mm lid designed to fit securely onto the chamber.
