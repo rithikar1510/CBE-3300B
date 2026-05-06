@@ -148,3 +148,25 @@ footer {
   font-size: 0.85rem;
   color: #6a737d;
 }
+
+/* all your existing styles above */
+
+/* =========================
+   Responsive Fix (ADD THIS AT THE END)
+   ========================= */
+
+@media (max-width: 768px) {
+  nav.toc {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  body {
+    flex-direction: column;
+  }
+}
