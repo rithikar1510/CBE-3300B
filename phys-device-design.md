@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Physical Device Design
+
+sidebar:
+  - title: ← Back to Home
+    url: "/"
+
+  - title: Tubing and Containers
+    url: "#tubing-and-containers"
+
+  - title: 3D Printing
+    url: "#3d-printing"
 ---
 
 This page explains the physical device design, including tubing, sealing, and the 3D printed case. 
