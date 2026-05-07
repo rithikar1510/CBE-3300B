@@ -23,7 +23,11 @@
   <ul>
     {% for item in page.sidebar %}
       <li>
-        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.url contains '#' %}
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
