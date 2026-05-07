@@ -1,7 +1,5 @@
 ---
-layout: default
-title: Initial Design Report
----
+
 layout: default
 title: Initial Design Report
 
