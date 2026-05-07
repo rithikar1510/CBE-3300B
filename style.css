@@ -1,15 +1,25 @@
+Copy and paste this whole file:
+
+```css
 /* =========================
-   1. Base Theme (Cayman-like)
+   1. Base Theme
    ========================= */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  display: flex;
+  margin: 0;
   font-family: 'Merriweather', serif;
   background: #f5f7fa;
   color: #1f2d3d;
 }
 
-/* Links */
+/* =========================
+   2. Links
+   ========================= */
+
 a {
   color: #0366d6;
   text-decoration: none;
@@ -20,14 +30,9 @@ a:hover {
 }
 
 /* =========================
-   2. Layout (Your Sidebar)
+   3. Sidebar / Table of Contents
    ========================= */
 
-body {
-  display: flex;
-}
-
-/* Sidebar */
 nav.toc {
   position: fixed;
   top: 0;
@@ -59,25 +64,30 @@ nav.toc a {
 
 nav.toc a:hover {
   background: #0366d6;
+  text-decoration: none;
 }
 
-/* Main content area */
+/* =========================
+   4. Main Layout
+   ========================= */
+
 main {
-  flex: 1;
+  margin-left: 220px;
+  width: calc(100% - 220px);
   padding: 40px;
 }
 
 .container {
   max-width: 900px;
-  width: 100%;
+  margin: 0 auto;
   background: #ffffff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
-   3. Typography (Cayman feel)
+   5. Typography
    ========================= */
 
 h1 {
@@ -98,24 +108,13 @@ h3 {
   color: #24292e;
 }
 
-p, ul {
+p,
+ul {
   line-height: 1.7;
 }
 
-.sidebar {
-  width: 220px;
-  min-height: 100vh;
-  background: #1f2933;
-  color: white;
-  padding: 20px;
-}
-
-main {
-  flex: 1;
-  padding: 40px;
-}
 /* =========================
-   4. Buttons (modern Cayman-style)
+   6. Buttons
    ========================= */
 
 .button-link {
@@ -132,10 +131,11 @@ main {
 .button-link:hover {
   background: #024ea2;
   color: white;
+  text-decoration: none;
 }
 
 /* =========================
-   5. Media
+   7. Media
    ========================= */
 
 iframe {
@@ -147,7 +147,7 @@ iframe {
 }
 
 /* =========================
-   6. Footer
+   8. Footer
    ========================= */
 
 footer {
@@ -157,10 +157,8 @@ footer {
   color: #6a737d;
 }
 
-/* all your existing styles above */
-
 /* =========================
-   Responsive Fix (ADD THIS AT THE END)
+   9. Responsive Fix
    ========================= */
 
 @media (max-width: 768px) {
@@ -172,9 +170,12 @@ footer {
 
   main {
     margin-left: 0;
+    width: 100%;
+    padding: 20px;
   }
 
-  body {
-    flex-direction: column;
+  .container {
+    padding: 1.25rem;
   }
 }
+```
