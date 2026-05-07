@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Future Directions
+
+sidebar:
+  - title: ← Back to Home
+    url: "/"
+
+  - title: Improvements
+    url: "#improvements"
+
+  - title: Hardware Changes
+    url: "#hardware-changes"
 ---
 
 This page covers what future directions of the device, including both additional features and improvements to the current product. 
