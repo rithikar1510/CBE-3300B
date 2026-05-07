@@ -1,6 +1,22 @@
 ---
 layout: default
 title: Preliminary Design Report
+
+sidebar:
+  - title: Project
+    url: "#Project"
+
+  - title: Premise
+    url: "#Premise"
+
+  - title: Calculations
+    url: "#Calculations"
+
+  - title: Summary
+    url: "#Summary"
+
+  - title: Components
+    url: "#Components"
 ---
   
 # Preliminary Design Report
