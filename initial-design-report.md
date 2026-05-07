@@ -1,6 +1,21 @@
 ---
 layout: default
 title: Initial Design Report
+sidebar:
+  - title: ClimaPod
+    url: "#climapod"
+
+  - title: Design Concept
+    url: "#design-concept"
+
+  - title: Market Research
+    url: "#market-research"
+
+  - title: SWOT Analysis
+    url: "#swot-analysis"
+
+  - title: GANTT Chart Work
+    url: "#GANTT-chart"
 ---
 
 ## Jump to Section
