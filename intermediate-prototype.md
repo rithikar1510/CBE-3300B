@@ -1,6 +1,19 @@
 ---
 layout: default
 title: Intermediate Prototype
+
+sidebar:
+  - title: ← Back to Home
+    url: "/"
+
+  - title: Checkpoint 3/31/26
+    url: "#checkpoint-33126"
+
+  - title: Checkpoint 4/2/2026
+    url: "#checkpoint-422026"
+
+  - title: Intermediate Prototype Presentation Data
+    url: "#intermediate-prototype-presentation-data-492026"
 ---
 
 # Intermediate Prototype
