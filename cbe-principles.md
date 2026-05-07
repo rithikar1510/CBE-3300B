@@ -1,6 +1,17 @@
 ---
 layout: default
 title: Chemical Engineering Principles
+
+sidebar:
+
+  - title: ← Back to Home
+    url: "/"
+    
+  - title: Mass Transfer
+    url: "#mass-transfer"
+
+  - title: Controls
+    url: "#controls"
 ---
 
 The operation of the ClimaPod humidity control system is based on several fundamental chemical engineering principles that govern moisture transfer, air–water interactions, and system regulation.
