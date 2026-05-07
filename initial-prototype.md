@@ -3,6 +3,9 @@ layout: default
 title: Initial Prototype
 
 sidebar:
+  - title: ← Back to Home
+    url: "/"
+
   - title: Checkpoint 2/19/2026
     url: "#checkpoint-2192026"
 
