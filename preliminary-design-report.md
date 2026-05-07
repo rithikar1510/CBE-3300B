@@ -3,6 +3,9 @@ layout: default
 title: Preliminary Design Report
 
 sidebar:
+  - title: ← Back to Home
+    url: "/"
+    
   - title: Project
     url: "#project"
 
