@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Initial Design Report
+---
+layout: default
+title: Initial Design Report
 
 sidebar:
   - title: ← Back to Home
@@ -14,7 +17,7 @@ sidebar:
 
   - title: Market Research
     url: "#market-research"
-    
+
   - title: Price Breakdown
     url: "#price-breakdown"
 
