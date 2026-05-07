@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intermediate Prototype
+title: Minimum Viable Product
 ---
 
 # Minimum Viable Product
