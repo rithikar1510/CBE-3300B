@@ -1,7 +1,11 @@
 ---
 layout: default
 title: Initial Design Report
+
 sidebar:
+  - title: ← Back to Home
+    url: "/"
+
   - title: ClimaPod
     url: "#climapod"
 
@@ -10,12 +14,15 @@ sidebar:
 
   - title: Market Research
     url: "#market-research"
+    
+  - title: Price Breakdown
+    url: "#price-breakdown"
 
   - title: SWOT Analysis
     url: "#swot-analysis"
 
-  - title: GANTT Chart 
-    url: "#GANTT-chart"
+  - title: GANTT Chart
+    url: "#gantt-chart"
 ---
 
 # ClimaPod
