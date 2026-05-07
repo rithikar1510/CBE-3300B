@@ -1,3 +1,8 @@
+---
+layout: default
+title: Future Directions
+---
+
 This page covers what future directions of the device, including both additional features and improvements to the current product. 
 
 # Improvements 
