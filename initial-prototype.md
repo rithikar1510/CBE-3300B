@@ -1,18 +1,19 @@
 ---
 layout: default
 title: Initial Prototype
+
 sidebar:
   - title: Checkpoint 2/19/2026
-    url: "#Checkpoint 2/19/2026"
+    url: "#checkpoint-2192026"
 
   - title: Checkpoint 3/5/2026
-    url: "#Checkpoint 3/5/2026"
+    url: "#checkpoint-352026"
 
   - title: Checkpoint 3/24/26
-    url: "#Checkpoint 3/24/26"
+    url: "#checkpoint-32426"
 
   - title: Initial Prototype Demo 3/26/2026
-    url: "#Initial Prototype Demo 3/26/2026"
+    url: "#initial-prototype-demo-3262026"
 ---
 
 # Initial Prototype
