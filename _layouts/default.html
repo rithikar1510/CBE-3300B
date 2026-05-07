@@ -18,15 +18,16 @@
 
 <body>
 
-  <!-- Sidebar -->
-  <nav class="toc">
-    <ul>
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/preliminary-design-report' | relative_url }}">Preliminary Design Report</a></li>
-      <li><a href="{{ '/final-report' | relative_url }}">Final Report</a></li>
-      <li><a href="{{ '/presentation' | relative_url }}">Presentation</a></li>
-    </ul>
-  </nav>
+<!-- Sidebar -->
+<nav class="toc">
+  <ul>
+    {% for item in page.sidebar %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
 
   <!-- Main Content -->
   <main>
