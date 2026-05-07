@@ -4,19 +4,25 @@ title: Preliminary Design Report
 
 sidebar:
   - title: Project
-    url: "#Project"
+    url: "#project"
 
   - title: Premise
-    url: "#Premise"
+    url: "#premise"
+
+  - title: Physical/Chemical Principles
+    url: "#physicalchemical-principles"
 
   - title: Calculations
-    url: "#Calculations"
+    url: "#calculations"
 
   - title: Summary
-    url: "#Summary"
+    url: "#summary"
+
+  - title: Prototyping Approach
+    url: "#prototyping-approach"
 
   - title: Components
-    url: "#Components"
+    url: "#components"
 ---
   
 # Preliminary Design Report
