@@ -1,6 +1,16 @@
 ---
 layout: default
 title: Minimum Viable Product
+
+sidebar:
+  - title: ← Back to Home
+    url: "/"
+
+  - title: Checkpoint 4/16/2026
+    url: "#checkpoint-4162026"
+
+  - title: Checkpoint 4/23/26
+    url: "#checkpoint-42326"
 ---
 
 # Minimum Viable Product
