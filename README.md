@@ -32,35 +32,16 @@ This GitHub Pages site is organized into multiple Markdown (`.md`) files, where 
 | File | Description |
 |------|-------------|
 | `index.md` | Main landing page and project overview |
-| `about.md` | Device description, market research, and motivation |
-| `device-operation.md` | Explanation of humidity control and engineering principles |
-| `design-evolution.md` | Prototype evolution and hardware development |
-| `performance.md` | Experimental performance data and results |
-| `future-directions.md` | Limitations and future improvements |
-
-### Assets
-
-```text
-assets/
-├── images/
-├── diagrams/
-├── graphs/
-└── videos/
-```
+| `preliminary-device-report.md` | Device description, market research, and motivation |
+| `initial-design-report.md` | Further explanation of device design and initial prototype |
+| `initial-prototype.md` | First prototype details and future directions |
+| `intermediate-prototype.md` | Second prototype with improvements and iterations |
+| `min-viable-product.md` | Final product with details |
+| `cbe-principles.md` | CBE principles at work |
+| `phys-device-design.md` | Explanation of hardware design |
+| `future-directions.md` | Future directions for design |
 
 Each Markdown page is rendered individually through GitHub Pages navigation.
-
----
-
-## Features
-
-- Portable humidity-controlled chamber
-- Adjustable RH setpoints
-- OLED display interface
-- Real-time humidity sensing
-- Hybrid proportional + bang-bang control
-- Fully self-contained power system
-- Low-cost design (~$81 total build cost)
 
 ---
 
@@ -68,9 +49,7 @@ Each Markdown page is rendered individually through GitHub Pages navigation.
 
 ## What is ClimaPod?
 
-ClimaPod is a compact, portable humidity control chamber for small-scale environments. The device maintains stable and adjustable humidity levels through controlled air mixing.
-
-A simple interface allows users to define humidity setpoints while the embedded controller automatically regulates the environment.
+ClimaPod is a compact, portable humidity control chamber for small-scale environments. The device maintains stable and adjustable humidity levels through controlled air mixing. A simple interface allows users to define humidity setpoints while the embedded controller automatically regulates the environment.
 
 ### Potential Applications
 
@@ -118,25 +97,7 @@ ClimaPod addresses this market gap by offering:
 
 ## How ClimaPod Works
 
-ClimaPod regulates humidity using two independent air streams.
-
-### Humid Air Stream
-
-Air is bubbled through water, where evaporation transfers water vapor into the airflow until near saturation.
-
-### Dry Air Stream
-
-Air passes through desiccant beads, removing moisture before entering the chamber.
-
-### Chamber Mixing
-
-Both streams enter the chamber and mix together to achieve the desired relative humidity.
-
-### Feedback Control
-
-A humidity sensor continuously measures RH inside the chamber. The controller compares the measured humidity against the user-defined setpoint and adjusts pump power accordingly.
-
-The pumps are controlled using PWM (pulse-width modulation), allowing dynamic humidity regulation.
+ClimaPod regulates humidity using two independent air streams. Air is bubbled through water, where evaporation transfers water vapor into the airflow until near saturation. Air passes through desiccant beads, removing moisture before entering the chamber. Both streams enter the chamber and mix together to achieve the desired relative humidity. A humidity sensor continuously measures RH inside the chamber. The controller compares the measured humidity against the user-defined setpoint and adjusts pump power accordingly. The pumps are controlled using PWM (pulse-width modulation), allowing dynamic humidity regulation.
 
 ---
 
@@ -174,17 +135,7 @@ where:
 
 ## Hybrid Control Algorithm
 
-The system uses a combination of:
-- Bang-bang control
-- Proportional control
-
-### Bang-Bang Control
-
-When the humidity error is large, the pumps operate at full power to rapidly approach the setpoint.
-
-### Proportional Control
-
-Once the error falls below approximately 4% RH, pump duty cycles become proportional to the error magnitude.
+The system uses a combination of bang-bang control and proportional control. When the humidity error is large, the pumps operate at full power to rapidly approach the setpoint. Once the error falls below approximately 4% RH, pump duty cycles become proportional to the error magnitude.
 
 This hybrid strategy was selected because:
 - It is computationally simple
@@ -192,37 +143,7 @@ This hybrid strategy was selected because:
 - It minimizes processor load
 - It still provides stable humidity regulation
 
----
-
-# Design Choices and Evolution
-
-## Initial Prototype
-
-The initial prototype:
-- Used transistors to drive the pumps
-- Drew power directly from the microcontroller
-- Had no display or user interface
-- Relied on USB power from a laptop
-
-### Challenges
-- Transistors became overloaded
-- Limited power delivery
-- Minimal usability
-
----
-
-## Intermediate Prototype
-
-The second iteration introduced:
-- MOSFET drivers
-- Battery-powered operation
-- Improved wiring and hardware integration
-
-The system still required a laptop for monitoring humidity data.
-
----
-
-## Final Prototype
+# Final Prototype
 
 The final design included:
 - Fully standalone operation
@@ -231,7 +152,7 @@ The final design included:
 - Single integrated power system
 - 3D printed enclosure
 
-### Major Components
+## Major Components
 
 - Adafruit Feather RP2040 microcontroller
 - OLED display
@@ -369,7 +290,3 @@ Future versions could support:
 CBE 3300B — Final Project
 
 ---
-
-# License
-
-This project is intended for educational and academic use.
