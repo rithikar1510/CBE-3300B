@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <nav class="toc">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">1 About</a></li>
+      <li><a href="{{ '/project-reports.html' | relative_url }}">2 Project Reports</a></li>
+      <li><a href="{{ '/project-timeline.html' | relative_url }}">3 Project Timeline</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+</body>
+</html>
