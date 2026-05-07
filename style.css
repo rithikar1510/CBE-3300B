@@ -1,20 +1,25 @@
 /* =========================
-   1. Base Theme
+   Base Reset
    ========================= */
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Merriweather', serif;
   background: #f5f7fa;
   color: #1f2d3d;
 }
 
 /* =========================
-   2. Links
+   Links
    ========================= */
 
 a {
@@ -27,18 +32,19 @@ a:hover {
 }
 
 /* =========================
-   3. Sidebar / Table of Contents
+   Sidebar
    ========================= */
 
 nav.toc {
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px;
+  width: 330px;
   height: 100vh;
   background: #24292e;
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   overflow-y: auto;
+  z-index: 1000;
 }
 
 nav.toc ul {
@@ -48,92 +54,132 @@ nav.toc ul {
 }
 
 nav.toc li {
-  margin: 0.4rem 0;
+  margin-bottom: 1.4rem;
 }
 
 nav.toc a {
   display: block;
-  padding: 0.5rem 0.75rem;
   color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.6rem 0.8rem;
   border-radius: 6px;
-  font-weight: 500;
 }
 
 nav.toc a:hover {
   background: #0366d6;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* =========================
-   4. Main Layout
+   Main Page Layout
    ========================= */
 
 main {
-  margin-left: 220px;
-  width: calc(100% - 220px);
+  margin-left: 330px;
+  width: calc(100% - 330px);
+  min-height: 100vh;
   padding: 40px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 3rem;
+  border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
-   5. Typography
+   Typography
    ========================= */
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   text-align: center;
-  margin-bottom: 0.5rem;
-  color: #24292e;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #0366d6;
 }
 
 h2 {
-  margin-top: 2rem;
-  padding-bottom: 0.3rem;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid #e1e4e8;
   color: #24292e;
 }
 
 h3 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
   color: #24292e;
 }
 
 p,
-ul {
+ul,
+ol {
+  font-size: 1rem;
   line-height: 1.7;
 }
 
+p {
+  margin-bottom: 1.2rem;
+}
+
 /* =========================
-   6. Buttons
+   Header / Landing Page Text
+   ========================= */
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  color: #24292e;
+  margin-bottom: 0.5rem;
+}
+
+.project-header p {
+  font-size: 1.15rem;
+  margin: 0.4rem 0;
+}
+
+/* =========================
+   Buttons
    ========================= */
 
 .button-link {
   display: inline-block;
   background: #0366d6;
-  color: white;
+  color: #ffffff;
   padding: 0.6rem 1rem;
   border-radius: 6px;
   margin: 0.3rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: background 0.2s ease;
 }
 
 .button-link:hover {
   background: #024ea2;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* =========================
-   7. Media
+   Images and Media
    ========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
 
 iframe {
   width: 100%;
@@ -144,7 +190,7 @@ iframe {
 }
 
 /* =========================
-   8. Footer
+   Footer
    ========================= */
 
 footer {
@@ -155,7 +201,7 @@ footer {
 }
 
 /* =========================
-   9. Responsive Fix
+   Responsive Layout
    ========================= */
 
 @media (max-width: 768px) {
@@ -163,6 +209,11 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    padding: 1rem;
+  }
+
+  nav.toc li {
+    margin-bottom: 0.5rem;
   }
 
   main {
@@ -172,6 +223,14 @@ footer {
   }
 
   .container {
-    padding: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
